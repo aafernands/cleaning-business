@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/cleaning-business/static/css/main.0cdb7b40.chunk.css",
-    "main.js": "/cleaning-business/static/js/main.f59087cc.chunk.js",
-    "main.js.map": "/cleaning-business/static/js/main.f59087cc.chunk.js.map",
+    "main.js": "/cleaning-business/static/js/main.1a7a196b.chunk.js",
+    "main.js.map": "/cleaning-business/static/js/main.1a7a196b.chunk.js.map",
     "runtime-main.js": "/cleaning-business/static/js/runtime-main.f12b8060.js",
     "runtime-main.js.map": "/cleaning-business/static/js/runtime-main.f12b8060.js.map",
-    "static/js/2.22ef055d.chunk.js": "/cleaning-business/static/js/2.22ef055d.chunk.js",
-    "static/js/2.22ef055d.chunk.js.map": "/cleaning-business/static/js/2.22ef055d.chunk.js.map",
+    "static/js/2.534e0549.chunk.js": "/cleaning-business/static/js/2.534e0549.chunk.js",
+    "static/js/2.534e0549.chunk.js.map": "/cleaning-business/static/js/2.534e0549.chunk.js.map",
     "index.html": "/cleaning-business/index.html",
     "static/css/main.0cdb7b40.chunk.css.map": "/cleaning-business/static/css/main.0cdb7b40.chunk.css.map",
-    "static/js/2.22ef055d.chunk.js.LICENSE.txt": "/cleaning-business/static/js/2.22ef055d.chunk.js.LICENSE.txt",
+    "static/js/2.534e0549.chunk.js.LICENSE.txt": "/cleaning-business/static/js/2.534e0549.chunk.js.LICENSE.txt",
     "static/media/AlexFernandes_Resume.63eb669d.pdf": "/cleaning-business/static/media/AlexFernandes_Resume.63eb669d.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.f12b8060.js",
-    "static/js/2.22ef055d.chunk.js",
+    "static/js/2.534e0549.chunk.js",
     "static/css/main.0cdb7b40.chunk.css",
-    "static/js/main.f59087cc.chunk.js"
+    "static/js/main.1a7a196b.chunk.js"
   ]
 }
