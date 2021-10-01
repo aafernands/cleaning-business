@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/aafernands/cleaning-business.git/static/css/main.a617e044.chunk.css",
-    "main.js": "/aafernands/cleaning-business.git/static/js/main.1a6daafe.chunk.js",
-    "main.js.map": "/aafernands/cleaning-business.git/static/js/main.1a6daafe.chunk.js.map",
-    "runtime-main.js": "/aafernands/cleaning-business.git/static/js/runtime-main.89545f43.js",
-    "runtime-main.js.map": "/aafernands/cleaning-business.git/static/js/runtime-main.89545f43.js.map",
-    "static/js/2.bcb82b0e.chunk.js": "/aafernands/cleaning-business.git/static/js/2.bcb82b0e.chunk.js",
-    "static/js/2.bcb82b0e.chunk.js.map": "/aafernands/cleaning-business.git/static/js/2.bcb82b0e.chunk.js.map",
-    "static/js/3.ebcc59e9.chunk.js": "/aafernands/cleaning-business.git/static/js/3.ebcc59e9.chunk.js",
-    "static/js/3.ebcc59e9.chunk.js.map": "/aafernands/cleaning-business.git/static/js/3.ebcc59e9.chunk.js.map",
-    "index.html": "/aafernands/cleaning-business.git/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/aafernands/cleaning-business.git/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.bcb82b0e.chunk.js.LICENSE.txt": "/aafernands/cleaning-business.git/static/js/2.bcb82b0e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/aafernands/cleaning-business.git/static/media/logo.6ce24c58.svg"
+    "main.css": "/cleaning-business/static/css/main.a617e044.chunk.css",
+    "main.js": "/cleaning-business/static/js/main.1a6daafe.chunk.js",
+    "main.js.map": "/cleaning-business/static/js/main.1a6daafe.chunk.js.map",
+    "runtime-main.js": "/cleaning-business/static/js/runtime-main.7b4693a2.js",
+    "runtime-main.js.map": "/cleaning-business/static/js/runtime-main.7b4693a2.js.map",
+    "static/js/2.bcb82b0e.chunk.js": "/cleaning-business/static/js/2.bcb82b0e.chunk.js",
+    "static/js/2.bcb82b0e.chunk.js.map": "/cleaning-business/static/js/2.bcb82b0e.chunk.js.map",
+    "static/js/3.ebcc59e9.chunk.js": "/cleaning-business/static/js/3.ebcc59e9.chunk.js",
+    "static/js/3.ebcc59e9.chunk.js.map": "/cleaning-business/static/js/3.ebcc59e9.chunk.js.map",
+    "index.html": "/cleaning-business/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/cleaning-business/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.bcb82b0e.chunk.js.LICENSE.txt": "/cleaning-business/static/js/2.bcb82b0e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cleaning-business/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.89545f43.js",
+    "static/js/runtime-main.7b4693a2.js",
     "static/js/2.bcb82b0e.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.1a6daafe.chunk.js"
