@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 import NavTabs from "./shared/components/NavTabs/NavTabs";
@@ -22,8 +22,7 @@ const userStyles = makeStyles(() => ({
 function App() {
 	const classes = userStyles();
 	return (
-		<Router>
-			<Switch>
+		<BrowserRouter>
 				<Container className={classes.test}>
 					<NavTabs />
 					<Route exact path="/" component={Home} />
@@ -34,8 +33,7 @@ function App() {
 					<Route path="/submitted" component={Submitted} />
 					<Footer />
 				</Container>
-			</Switch>
-		</Router>
+		</BrowserRouter>
 	);
 }
 
