@@ -23,16 +23,16 @@ function App() {
 	const classes = userStyles();
 	return (
 		<BrowserRouter>
-				<Container className={classes.test}>
-					<NavTabs />
-					<Route exact path="/" component={Home} />
-					<Route exact path="/about" component={About} />
-					<Route exact path="/contact" component={Contact} />
-					<Route path="/services" component={Services} />
-					<Route path="/footer" component={Footer} />
-					<Route path="/submitted" component={Submitted} />
-					<Footer />
-				</Container>
+			<Container className={classes.test}>
+				<NavTabs />
+				<Route path="/" component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/contact" component={Contact} />
+				<Route path="/services" component={Services} />
+				<Route path="/footer" component={Footer} />
+				<Route path="/submitted" component={Submitted} />
+				<Footer />
+			</Container>
 		</BrowserRouter>
 	);
 }
