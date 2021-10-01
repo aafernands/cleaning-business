@@ -1,0 +1,66 @@
+.footerInfo {
+	width: 100%;
+	background-color: #313131;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.fa {
+	padding: 0;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px;
+	color: white;
+}
+
+.fa:hover {
+	text-decoration: none;
+	color: #1a237e;
+}
+
+.fa-github {
+	color: white;
+}
+
+.fa-twitter {
+	color: white;
+	margin: 0;
+}
+
+.fa-linkedin {
+	color: white;
+	margin: 0;
+}
+
+.fa-instagram {
+	color: white;
+	margin: 0;
+}
+
+.credits-footer {
+	font-size: 10px;
+	font-family: "Raleway", sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.icons {
+	padding:5 0;
+	font-size: 15px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px;
+	color: white;
+}
