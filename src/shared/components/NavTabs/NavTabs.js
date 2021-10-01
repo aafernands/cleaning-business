@@ -152,11 +152,11 @@ function NavTabs({ onToggle }) {
 								<ListItemText primary={"CONTACT"} />
 							</ListItem>
 							<hr></hr>
-							<ListItem button component={Link} to="/portifolio">
+							<ListItem button component={Link} to="/services">
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />
 								</ListItemIcon>
-								<ListItemText primary={"PORTIFOLIO"} />
+								<ListItemText primary={"SERVICES"} />
 							</ListItem>
 							<hr></hr>
 							<div className={classes.socialIcons}>

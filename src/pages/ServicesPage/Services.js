@@ -1,17 +1,18 @@
 import React from "react";
-import "./Portifolio.css";
-import Projects from "./Projects.js";
+import "./services.css";
+import "./services.css";
+import Accordion from "./Accordion.js";
 
-export default function Portifolio() {
+export default function Services() {
 	return (
 		<div className="container">
-			<h1 className="display-4">PORTIFOLIO</h1>
+			<h1 className="display-4">SERVICES</h1>
 			<p className="lead">
 				{" "}
 				<i>HERE YOU CAN HAVE A GLIMPSE OF MY WORK </i>
 			</p>
 			<div>
-				<Projects />
+				<Accordion />
 			</div>
 		</div>
 	);

@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 import { makeStyles } from "@material-ui/core/styles";
-import "./Projects.css";
 
 import Grid from "@material-ui/core/Grid";
 
