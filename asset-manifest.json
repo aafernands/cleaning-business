@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cleaning-business/static/css/main.0cdb7b40.chunk.css",
-    "main.js": "/cleaning-business/static/js/main.c7566939.chunk.js",
-    "main.js.map": "/cleaning-business/static/js/main.c7566939.chunk.js.map",
+    "main.css": "/cleaning-business/static/css/main.4e71cd93.chunk.css",
+    "main.js": "/cleaning-business/static/js/main.f373ac2b.chunk.js",
+    "main.js.map": "/cleaning-business/static/js/main.f373ac2b.chunk.js.map",
     "runtime-main.js": "/cleaning-business/static/js/runtime-main.f12b8060.js",
     "runtime-main.js.map": "/cleaning-business/static/js/runtime-main.f12b8060.js.map",
-    "static/js/2.534e0549.chunk.js": "/cleaning-business/static/js/2.534e0549.chunk.js",
-    "static/js/2.534e0549.chunk.js.map": "/cleaning-business/static/js/2.534e0549.chunk.js.map",
+    "static/js/2.247ecdf0.chunk.js": "/cleaning-business/static/js/2.247ecdf0.chunk.js",
+    "static/js/2.247ecdf0.chunk.js.map": "/cleaning-business/static/js/2.247ecdf0.chunk.js.map",
     "index.html": "/cleaning-business/index.html",
-    "static/css/main.0cdb7b40.chunk.css.map": "/cleaning-business/static/css/main.0cdb7b40.chunk.css.map",
-    "static/js/2.534e0549.chunk.js.LICENSE.txt": "/cleaning-business/static/js/2.534e0549.chunk.js.LICENSE.txt",
+    "static/css/main.4e71cd93.chunk.css.map": "/cleaning-business/static/css/main.4e71cd93.chunk.css.map",
+    "static/js/2.247ecdf0.chunk.js.LICENSE.txt": "/cleaning-business/static/js/2.247ecdf0.chunk.js.LICENSE.txt",
     "static/media/AlexFernandes_Resume.63eb669d.pdf": "/cleaning-business/static/media/AlexFernandes_Resume.63eb669d.pdf"
   },
   "entrypoints": [
     "static/js/runtime-main.f12b8060.js",
-    "static/js/2.534e0549.chunk.js",
-    "static/css/main.0cdb7b40.chunk.css",
-    "static/js/main.c7566939.chunk.js"
+    "static/js/2.247ecdf0.chunk.js",
+    "static/css/main.4e71cd93.chunk.css",
+    "static/js/main.f373ac2b.chunk.js"
   ]
 }
