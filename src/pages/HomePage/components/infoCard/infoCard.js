@@ -88,7 +88,7 @@ function InfoCard() {
 							href="/about"
 							position="center"
 						>
-							MORE ABOUT ME
+							MORE ABOUT US
 						</Button>
 					</Box>
 				</Container>

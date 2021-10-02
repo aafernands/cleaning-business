@@ -16,6 +16,9 @@ import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import WorkIcon from "@material-ui/icons/Work";
 import PersonIcon from "@material-ui/icons/Person";
 import HomeIcon from "@material-ui/icons/Home";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import "./NavTabs.css";
 
@@ -99,7 +102,7 @@ function NavTabs({ onToggle }) {
 							</Button>
 
 							<Button variant="containedPrimary" component={Link} to="/about">
-								ABOUT
+								ABOUT US
 							</Button>
 
 							<Button variant="containedPrimary" component={Link} to="/contact">
@@ -142,7 +145,7 @@ function NavTabs({ onToggle }) {
 								<ListItemIcon>
 									<PersonIcon className={classes.iconStyle} />
 								</ListItemIcon>
-								<ListItemText primary={"ABOUT"} />
+								<ListItemText primary={"ABOUT US"} />
 							</ListItem>
 							<hr></hr>
 							<ListItem button component={Link} to="/contact">
@@ -160,29 +163,15 @@ function NavTabs({ onToggle }) {
 							</ListItem>
 							<hr></hr>
 							<div className={classes.socialIcons}>
-								<a
-									href="https://twitter.com/alexafernands/"
-									className="fa fa-twitter"
-								>
-									{" "}
+								<a class="icons" href="https://www.instagram.com/aafernands/">
+									<FontAwesomeIcon icon={faFacebook} color="white" size="1x" />
 								</a>
-								<a
-									href="https://www.linkedin.com/in/alex-fernandes-5850b535/"
-									className="fa fa-linkedin"
-								>
-									{" "}
+
+								<a class="icons" href="https://www.instagram.com/aafernands">
+									<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />{" "}
 								</a>
-								<a
-									href="https://www.instagram.com/aafernands/"
-									className="fa fa-instagram"
-								>
-									{" "}
-								</a>
-								<a
-									href="https://github.com/aafernands/"
-									className="fa fa-github"
-								>
-									{" "}
+								<a class="icons" href="https://www.instagram.com/aafernands">
+									<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />{" "}
 								</a>
 							</div>
 						</List>

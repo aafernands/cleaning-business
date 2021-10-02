@@ -55,12 +55,11 @@
 }
 
 .icons {
-	padding:5 0;
+	padding: 10px;
 	font-size: 15px;
 	width: 30px;
 	height: 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 0px;
 	color: white;
 }

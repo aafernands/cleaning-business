@@ -5,3 +5,16 @@ img {
 .AccordionStyle {
 	color: black;
 }
+
+
+.contactBox {
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	border-radius: 0rem;
+	font-size: 12px;
+	padding: 20px;
+	background-color: #ffffffbe;
+	box-shadow: 0 0 5px #0000005e;
+	color: white;
+}

@@ -5,6 +5,9 @@ import "./Contact.css";
 import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
+import MenuItem from "@mui/material/MenuItem";
+
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -35,8 +38,47 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+const services = [
+	{
+		value: "sofa",
+		label: "Sofa Cleaning",
+	},
+	{
+		value: "couch",
+		label: "Cleaning",
+	},
+	{
+		value: "vehicle",
+		label: "Vehicle",
+	},
+	{
+		value: "Mmttress",
+		label: "Mattress",
+	},
+	{
+		value: "armchair",
+		label: "Armchair",
+	},
+	{
+		value: "chair",
+		label: "Chair",
+	},
+	{
+		value: "rug",
+		label: "Rugs",
+	},
+	{
+		value: "Other",
+		label: "other",
+	},
+];
+
 export default function Contact() {
 	const classes = useStyles();
+	const [currency, setCurrency] = React.useState("EUR");
+	const handleChange = (event) => {
+		setCurrency(event.target.value);
+	};
 
 	<a href="mailTo:alexfernands@outlook.com"> Contact Me </a>;
 
@@ -45,7 +87,7 @@ export default function Contact() {
 			<div>
 				<section>
 					<h1 className="display-4">
-						CONTACT <span id="spanTitle">ME </span>{" "}
+						CONTACT <span id="spanTitle">US </span>{" "}
 					</h1>
 					<p className="lead">
 						{" "}
@@ -91,6 +133,26 @@ export default function Contact() {
 						placeholder="Your Email"
 						InputProps={{}}
 					/>
+					<br></br>
+					<br></br>
+
+					<TextField
+						// helperText="Please select what service you need"
+						id="outlined-textarea outlined-required"
+						className={classes.textField}
+						variant="outlined"
+						select
+						label="Please select what type service you need"
+						value={currency}
+						onChange={handleChange}
+					>
+						{services.map((option) => (
+							<MenuItem key={option.value} value={option.value}>
+								{option.label}
+							</MenuItem>
+						))}
+					</TextField>
+					<br></br>
 
 					<TextField
 						id="outlined-textarea outlined-required"
@@ -98,7 +160,7 @@ export default function Contact() {
 						label="Your Message"
 						multiline
 						rows={6}
-						placeholder="Placeholder"
+						placeholder="Enter your message"
 						variant="outlined"
 						InputProps={{}}
 					/>

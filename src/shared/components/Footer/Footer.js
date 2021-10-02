@@ -11,15 +11,12 @@ function Footer() {
 
 			<a class="icons" href="https://www.instagram.com/aafernands/">
 				<FontAwesomeIcon icon={faFacebook} color="white" size="1x" />
-
-
 			</a>
-
-			<a href="https://www.instagram.com/aafernands">
-				<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />{" "}
+			<a class="icons" href="https://www.instagram.com/aafernands">
+				<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />
 			</a>
-			<a href="https://www.instagram.com/aafernands">
-				<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />{" "}
+			<a class="icons" href="https://www.instagram.com/aafernands">
+				<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />
 			</a>
 
 			<p>

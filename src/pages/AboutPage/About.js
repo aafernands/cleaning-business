@@ -12,6 +12,8 @@ import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
 
+import cleanImage from "./clean-1.jpg";
+
 import LinearProgressWithLabel from "./components/LinearProgressWithLabel";
 
 const useStyles = makeStyles({
@@ -78,88 +80,42 @@ export default function BasicTable() {
 					<br></br>
 				</section>
 			</div>
-			{/* <div className="test">
-				<h3>Work Experience</h3>
-
-				<TableContainer>
-					<Table className={classes.table} aria-label="simple table">
-						<TableHead>
-							<TableRow>
-								<TableCell className={classes.tableContent}>Dates</TableCell>
-								<TableCell className={classes.tableContent} align="right">
-									Work
-								</TableCell>
-							</TableRow>
-						</TableHead>
-						<TableBody>
-							{rows.map((row) => (
-								<TableRow key={row.dates}>
-									<TableCell
-										className={classes.tableContent}
-										component="th"
-										scope="row"
-									>
-										{row.dates}
-									</TableCell>
-									<TableCell className={classes.tableContent} align="right">
-										{row.work}
-									</TableCell>
-								</TableRow>
-							))}
-						</TableBody>
-					</Table>
-				</TableContainer>
-			</div> */}
 
 			<Divider />
 			<br></br>
-			<div className="test">
-				<h3>Skils</h3>
 
-				<div className={classes.skill}>
-					<LinearProgressWithLabel label="React" value={60} />
-					<LinearProgressWithLabel label="Javascript" value={60} />
-					<LinearProgressWithLabel label="HTML and CSS" value={80} />
-					<LinearProgressWithLabel label="MongoDB" value={60} />
-					<LinearProgressWithLabel label="Material-UI" value={80} />
-					<LinearProgressWithLabel label="JWT" value={70} />
-					<LinearProgressWithLabel label="Bootstrap" value={80} />
-				</div>
-			</div>
 			<br></br>
-			<div className="test">
+			<Container className="container">
 				<div>
 					<h3>Myinfo</h3>
 				</div>
 
-				<div className={classes.skill}>
-					<p>First Name: Alex</p>
-					<p>Last Name: Fernandes</p>
-					<p>Birthdate: 04 April 1987</p>
-					<p>Nationality: Brazilian</p>
-					<p>Experience: Entry Level</p>
-					<p>Address: New Jersey, US</p>
-					<p>Freelance: Available</p>
-					<p>Languages: English - Portuguese</p>
-					<p>Phone: 9738363080</p>
-					<p>Email: alexfernands@outlook.com</p>
-					<p>GitHub: aafernands</p>
-					<p>Twitter: alexafernands</p>
+				<div>
+					<img src={cleanImage} className="cleanImage" alt="Cleaning" />
+					<p className="aboutUs">
+						{" "}
+						Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor
+						sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+						consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+						adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+						elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+						ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+						sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+						consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+						adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+						elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+						ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+						sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+						consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+						adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+						elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+						ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+						sit amet, consectetur adipiscing elit{" "}
+					</p>
 				</div>
-			</div>
+			</Container>
 			<br></br>
-			<div className="test">
-				<Button
-					size="large"
-					style={{ fontSize: 12, padding: 18 }}
-					variant="contained"
-					color="primary"
-					href={CV_PDF}
-					position="center"
-				>
-					DOWNLOAD MY CV
-				</Button>
-			</div>
+
 			<br></br>
 			<br></br>
 		</Container>
