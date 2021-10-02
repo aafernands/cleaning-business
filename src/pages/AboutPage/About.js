@@ -69,7 +69,7 @@ export default function BasicTable() {
 			<div>
 				<section>
 					<h1 className="display-4">
-						ABOUT <span id="spanTitle">ME </span>{" "}
+						ABOUT <span id="spanTitle">US </span>{" "}
 					</h1>
 					<p className="lead">
 						{" "}

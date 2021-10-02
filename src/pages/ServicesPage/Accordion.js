@@ -1,78 +1,103 @@
-import React from "react";
+import * as React from "react";
 import Accordion from "@mui/material/Accordion";
-import Container from "@mui/material/Container";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import { makeStyles } from "@material-ui/core/styles";
-
-import Grid from "@material-ui/core/Grid";
-
-const useStyles = makeStyles((theme) => ({
-	thumbnail: {
-		marging: "20px",
-		padding: "20px",
-		textAlign: "center",
-		background: "#313131be",
-		boxShadow: "2.5px 5px 4px #fff",
-		color: "white",
-	},
-}));
-
-function Projects(props) {
-	const classes = useStyles();
-
+export default function SimpleAccordion() {
 	return (
-		// Render a Thumbnail component
-		<Container>
-			{/* <h1>Projects</h1> */}
-			<Grid container spacing={2}>
-				<Accordion>
-					<AccordionSummary
-						expandIcon={<ArrowDropDownIcon />}
-						aria-controls="panel1a-content"
-						id="panel1a-header"
-					>
-						<Typography>Accordion 1</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-							eget.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion>
-					<AccordionSummary
-						expandIcon={<ArrowDropDownIcon />}
-						aria-controls="panel2a-content"
-						id="panel2a-header"
-					>
-						<Typography>Accordion 2</Typography>
-					</AccordionSummary>
-					<AccordionDetails>
-						<Typography>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-							eget.
-						</Typography>
-					</AccordionDetails>
-				</Accordion>
-				<Accordion disabled>
-					<AccordionSummary
-						expandIcon={<ArrowDropDownIcon />}
-						aria-controls="panel3a-content"
-						id="panel3a-header"
-					>
-						<Typography>Disabled Accordion</Typography>
-					</AccordionSummary>
-				</Accordion>
-			</Grid>
-		</Container>
+		<div className="accordionStyle">
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel1a-content"
+					id="panel1a-header"
+				>
+					<Typography>Sofas/Couches</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>Vehicles</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>Mattress</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>Armchair</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>Rugs</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+			<Accordion>
+				<AccordionSummary
+					expandIcon={<ExpandMoreIcon />}
+					aria-controls="panel2a-content"
+					id="panel2a-header"
+				>
+					<Typography>Chair</Typography>
+				</AccordionSummary>
+				<AccordionDetails>
+					<Typography>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						malesuada lacus ex, sit amet blandit leo lobortis eget.
+					</Typography>
+				</AccordionDetails>
+			</Accordion>
+		</div>
 	);
 }
-
-export default Projects;
