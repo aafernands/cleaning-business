@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+
 
 import NavTabs from "./shared/components/NavTabs/NavTabs";
 import Footer from "./shared/components/Footer/Footer";

@@ -1,13 +1,14 @@
 import React from "react";
-import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
+import emailjs from "emailjs-com";
 import "./Contact.css";
+import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-import Box from "@mui/material/Box";
 import MenuItem from "@mui/material/MenuItem";
-
+import Grid from "@mui/material/Grid";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	label: {
 		textTransform: "capitalize",
+		textAlign: "center",
 	},
 	input: {
 		width: "100%",
@@ -33,8 +35,9 @@ const useStyles = makeStyles((theme) => ({
 		marginRight: "auto",
 		paddingBottom: 0,
 		marginTop: 10,
-		color: "black",
+		color: "white",
 		fontWeight: 500,
+		textTransform: "capitalize",
 	},
 }));
 
@@ -45,27 +48,27 @@ const services = [
 	},
 	{
 		value: "couch",
-		label: "Cleaning",
+		label: "Couch Cleaning",
 	},
 	{
 		value: "vehicle",
-		label: "Vehicle",
+		label: "Vehicle Detailing",
 	},
 	{
-		value: "Mmttress",
-		label: "Mattress",
+		value: "Mattress",
+		label: "Mattress Cleaning",
 	},
 	{
 		value: "armchair",
-		label: "Armchair",
+		label: "Armchair Cleaning",
 	},
 	{
 		value: "chair",
-		label: "Chair",
+		label: "Chair Cleaning",
 	},
 	{
 		value: "rug",
-		label: "Rugs",
+		label: "Rug Cleaning",
 	},
 	{
 		value: "Other",
@@ -74,125 +77,156 @@ const services = [
 ];
 
 export default function Contact() {
-	const classes = useStyles();
 	const [currency, setCurrency] = React.useState("EUR");
 	const handleChange = (event) => {
 		setCurrency(event.target.value);
 	};
+	const classes = useStyles();
 
-	<a href="mailTo:alexfernands@outlook.com"> Contact Me </a>;
+	function sendEmail(e) {
+		e.preventDefault();
 
+		emailjs
+			.sendForm(
+				"service_dfojucd",
+				"template_lsgav8r",
+				e.target,
+				"user_zh5QsjFDwO8o1tCY9tkoy"
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+		e.target.reset();
+	}
+	function onChange(value) {
+		console.log("Captcha value:", value);
+	}
 	return (
 		<Container className="container">
 			<div>
 				<section>
 					<h1 className="display-4">
-						CONTACT <span id="spanTitle">US </span>{" "}
+						CONTACT <span id="spanTitle">US </span>
 					</h1>
 					<p className="lead">
-						{" "}
 						Feel free to call us directly if you have any questions.
 					</p>
 				</section>
 			</div>
-			<div className="contactBox">
-				<form
-					id="outlined-required"
-					className={classes.root}
-					noValidate
-					autoComplete="off"
-				>
-					<TextField
-						className={classes.textField}
-						id="outlined-required"
-						label="First Name"
-						variant="outlined"
-						InputProps={{}}
-					/>
-					<TextField
-						className={classes.textField}
-						id="outlined-required"
-						label="Last Name"
-						variant="outlined"
-						placeholder="Last Name"
-						InputProps={{}}
-					/>
-					<TextField
-						className={classes.textField}
-						id="outlined-required outlined-textarea "
-						label="Telephone"
-						variant="outlined"
-						InputProps={{}}
-					/>
+			<Grid container spacing={2}>
+				<Grid item xs={12} lg={6}>
+					<div className="contactBox">
+						<form
+							onSubmit={sendEmail}
+							id="outlined-required"
+							className={classes.root}
+							noValidate
+							autoComplete="off"
+						>
+							<TextField
+								required
+								className={classes.textField}
+								id="outlined-required outlined-textarea "
+								variant="outlined"
+								label="Name"
+								placeholder="Enter your Name"
+								InputProps={{}}
+								type="text"
+								name="from_name"
+							/>
+							<TextField
+								required
+								className={classes.textField}
+								id="outlined-textarea outlined-required"
+								variant="outlined"
+								label="Email"
+								type="email"
+								placeholder="Enter your Email"
+								name="user_email"
+								InputProps={{}}
+							/>
+							<TextField
+								className={classes.textField}
+								id="outlined-required outlined-textarea "
+								type="text"
+								placeholder="Enter your Telephone"
+								label="Telephone"
+								variant="outlined"
+								InputProps={{}}
+								name="telephone"
+							/>
+							<TextField
+								// helperText="Please select what service you need"
+								id="outlined-textarea outlined-required"
+								className={classes.textField}
+								variant="outlined"
+								select
+								label="Please select what type service you need"
+								value={currency}
+								name="service"
+								onChange={handleChange}
+							>
+								{services.map((option) => (
+									<MenuItem key={option.value} value={option.value}>
+										{option.label}
+									</MenuItem>
+								))}
+							</TextField>
 
-					<TextField
-						className={classes.textField}
-						id="outlined-textarea outlined-required"
-						label="Your Email"
-						variant="outlined"
-						placeholder="Your Email"
-						InputProps={{}}
-					/>
-					<br></br>
-					<br></br>
+							<TextField
+								required
+								className={classes.textField}
+								id="outlined-textarea outlined-required"
+								label="Message"
+								multiline
+								rows={6}
+								placeholder="Enter your message"
+								variant="outlined"
+								InputProps={{}}
+								name="message"
+							/>
+							<br></br>
+							<br></br>
+							<div className={classes.textField}>
+								<ReCAPTCHA
+									sitekey="6LehMqgcAAAAALM_me6xU5o6UvAO-UhnN-Fj4gX1"
+									onChange={onChange}
+								/>
+							</div>
+							<Button
+								className={classes.textField}
+								size="large"
+								style={{ fontSize: 12, padding: 18 }}
+								variant="contained"
+								color="primary"
+								value="Submit"
+								position="left"
+								type="submit"
+							>
+								SEND MESSAGE
+							</Button>
+						</form>
+					</div>
+				</Grid>
+				<Grid item xs={12} lg={6}>
+					<div class="contactInfo">
+						<h5>My Cleaning Business</h5>
+						<h6>
+							502 Willow Dr <br></br> Ocean Township 07712
+						</h6>
+						<h2>+1 9738363080</h2>
 
-					<TextField
-						// helperText="Please select what service you need"
-						id="outlined-textarea outlined-required"
-						className={classes.textField}
-						variant="outlined"
-						select
-						label="Please select what type service you need"
-						value={currency}
-						onChange={handleChange}
-					>
-						{services.map((option) => (
-							<MenuItem key={option.value} value={option.value}>
-								{option.label}
-							</MenuItem>
-						))}
-					</TextField>
-					<br></br>
-
-					<TextField
-						id="outlined-textarea outlined-required"
-						className={classes.textField}
-						label="Your Message"
-						multiline
-						rows={6}
-						placeholder="Enter your message"
-						variant="outlined"
-						InputProps={{}}
-					/>
-				</form>
-
-				<br></br>
-
-				<Button
-					value="Submit"
-					size="large"
-					style={{ fontSize: 12, padding: 18 }}
-					variant="contained"
-					color="primary"
-					href="/submitted"
-					position="left"
-				>
-					SEND
-				</Button>
-
-				<div class="contactInfo">
-					<h5>My Cleaning Business</h5>
-					<h6>
-						502 Willow Dr <br></br> Ocean Township 07712
-					</h6>
-					<h2>+1 9738363080</h2>
-
-					<p component={Link} to="mailto:alexfernands@outlook.com">
-						alexfernands@outlook.com"
-					</p>
-				</div>
-			</div>
-			<br></br>
+						<p component={Link} to="mailto:alexfernands@outlook.com">
+							alexfernands@outlook.com"
+						</p>
+					</div>
+				</Grid>
+			</Grid>
 		</Container>
 	);
 }
