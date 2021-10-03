@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { makeStyles } from "@material-ui/core/styles";
@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
 
 const services = [
 	{
+		value: "default",
+		label: "",
+	},
+	{
 		value: "sofa",
 		label: "Sofa Cleaning",
 	},
@@ -77,9 +81,9 @@ const services = [
 ];
 
 export default function Contact() {
-	const [currency, setCurrency] = React.useState("EUR");
+	const [service, setService] = React.useState("default");
 	const handleChange = (event) => {
-		setCurrency(event.target.value);
+		setService(event.target.value);
 	};
 	const classes = useStyles();
 
@@ -106,6 +110,9 @@ export default function Contact() {
 	function onChange(value) {
 		console.log("Captcha value:", value);
 	}
+
+	const [disableSubmit, setDisableSubmit] = useState(true);
+
 	return (
 		<Container className="container">
 			<div>
@@ -167,7 +174,7 @@ export default function Contact() {
 								variant="outlined"
 								select
 								label="Please select what type service you need"
-								value={currency}
+								value={service}
 								name="service"
 								onChange={handleChange}
 							>
@@ -192,12 +199,14 @@ export default function Contact() {
 							/>
 							<br></br>
 							<br></br>
+
 							<div className={classes.textField}>
 								<ReCAPTCHA
 									sitekey="6LehMqgcAAAAALM_me6xU5o6UvAO-UhnN-Fj4gX1"
-									onChange={onChange}
+									onChange={useCallback(() => setDisableSubmit(false))}
 								/>
 							</div>
+
 							<Button
 								className={classes.textField}
 								size="large"
@@ -207,6 +216,7 @@ export default function Contact() {
 								value="Submit"
 								position="left"
 								type="submit"
+								disabled={disableSubmit}
 							>
 								SEND MESSAGE
 							</Button>
