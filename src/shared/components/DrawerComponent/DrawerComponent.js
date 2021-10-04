@@ -38,10 +38,10 @@ export default function TemporaryDrawer() {
 				<ListItemText primary={"HOME"} />
 			</ListItem>
 			<ListItem button>
-				<ListItemText primary={"ABOUT US"} />
+				<ListItemText primary={"ABOUT "} />
 			</ListItem>
 			<ListItem button>
-				<ListItemText primary={"CONTACT"} />
+				<ListItemText primary={"CONTACT US"} />
 			</ListItem>
 		</List>
 	);

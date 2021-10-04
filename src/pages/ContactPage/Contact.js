@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
 import ReCAPTCHA from "react-google-recaptcha";
+import IconButton from "@mui/material/IconButton";
+import PhotoCamera from "@mui/icons-material/PhotoCamera";
+import Stack from "@mui/material/Stack";
+import { styled } from "@mui/material/styles";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -79,7 +83,9 @@ const services = [
 		label: "other",
 	},
 ];
-
+const Input = styled("input")({
+	display: "none",
+});
 export default function Contact() {
 	const [service, setService] = React.useState("default");
 	const handleChange = (event) => {
@@ -198,6 +204,42 @@ export default function Contact() {
 								name="message"
 							/>
 							<br></br>
+
+
+
+
+
+							<Stack direction="row" alignItems="center" spacing={2}>
+								<label htmlFor="contained-button-file">
+									<Input
+										accept="image/*"
+										id="contained-button-file"
+										multiple
+										type="file"
+									/>
+									<Button variant="contained" component="span">
+										Upload
+									</Button>
+								</label>
+								<label htmlFor="icon-button-file">
+									<Input accept="image/*" id="icon-button-file" type="file" />
+									<IconButton
+										color="primary"
+										aria-label="upload picture"
+										component="span"
+									>
+										<PhotoCamera />
+									</IconButton>
+								</label>
+							</Stack>
+
+
+
+
+
+
+
+
 							<br></br>
 
 							<div className={classes.textField}>

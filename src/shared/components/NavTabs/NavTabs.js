@@ -16,10 +16,9 @@ import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import WorkIcon from "@material-ui/icons/Work";
 import PersonIcon from "@material-ui/icons/Person";
 import HomeIcon from "@material-ui/icons/Home";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -53,19 +52,24 @@ const useStyles = makeStyles((theme) => ({
 	},
 	drawer: {
 		width: 300,
-		backgroundColor: "#313131;",
+		backgroundColor: "white;",
 	},
 	fullList: {
 		width: "auto",
 	},
 	linkColor: {
-		color: "white",
+		color: "gray",
 	},
 	iconStyle: {
-		color: "white",
+		color: "gray",
 	},
 	socialIcons: {
-		textAlign: "justify",
+		textAlign: "center",
+		position: "absolute",
+		zIndex: 50,
+		paddingTop: "90px",
+		paddingBottom: "20px",
+		height: "100%",
 	},
 	outlined: {
 		"&:hover": {
@@ -102,11 +106,11 @@ function NavTabs({ onToggle }) {
 							</Button>
 
 							<Button variant="containedPrimary" component={Link} to="/about">
-								ABOUT US
+								ABOUT
 							</Button>
 
 							<Button variant="containedPrimary" component={Link} to="/contact">
-								CONTACT
+								CONTACT US
 							</Button>
 
 							<Button
@@ -145,14 +149,7 @@ function NavTabs({ onToggle }) {
 								<ListItemIcon>
 									<PersonIcon className={classes.iconStyle} />
 								</ListItemIcon>
-								<ListItemText primary={"ABOUT US"} />
-							</ListItem>
-							<hr></hr>
-							<ListItem button component={Link} to="/contact">
-								<ListItemIcon>
-									<PermContactCalendarIcon className={classes.iconStyle} />
-								</ListItemIcon>
-								<ListItemText primary={"CONTACT"} />
+								<ListItemText primary={"ABOUT"} />
 							</ListItem>
 							<hr></hr>
 							<ListItem button component={Link} to="/services">
@@ -162,20 +159,31 @@ function NavTabs({ onToggle }) {
 								<ListItemText primary={"SERVICES"} />
 							</ListItem>
 							<hr></hr>
-							<div className={classes.socialIcons}>
-								<a class="icons" href="https://www.instagram.com/aafernands/">
-									<FontAwesomeIcon icon={faFacebook} color="white" size="1x" />
-								</a>
-
-								<a class="icons" href="https://www.instagram.com/aafernands">
-									<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />{" "}
-								</a>
-								<a class="icons" href="https://www.instagram.com/aafernands">
-									<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />{" "}
-								</a>
-							</div>
 						</List>
 					</MenuList>
+
+					<ListItem button component={Link} to="/contact">
+						<ListItemIcon>
+							<PermContactCalendarIcon className={classes.iconStyle} />
+						</ListItemIcon>
+						<ListItemText primary={"CONTACT US"} />
+					</ListItem>
+				</div>
+
+				<Button variant="outlined" href="#outlined-buttons">
+					CONTACT US
+				</Button>
+
+				<div className={classes.socialIcons}>
+					<a class="icons" href="https://www.facebook.com/">
+						<FacebookIcon color="action" />
+					</a>
+					<a class="icons" href="https://www.facebook.com/">
+						<InstagramIcon color="action" />
+					</a>
+					<a class="icons" href="https://www.facebook.com/">
+						<MailOutlineIcon color="action" />
+					</a>
 				</div>
 			</Drawer>
 		</div>
