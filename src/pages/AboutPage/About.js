@@ -1,29 +1,33 @@
 import React from "react";
 import "./About.css";
-import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
 import cleanImage from "./clean-1.jpg";
+import Image from "./towel.jpg"; // Import using relative path
 
-
+const styles = {
+	paperContainer: {
+		backgroundImage: `url(${Image})`,
+		flexGrow: 1,
+		width: "100%",
+		height: 200,
+		margin: 0,
+		alignItems: "center",
+		justifyContent: "center",
+	},
+};
 
 export default function BasicTable() {
-
 	return (
-		<Container className={"container"}>
-			<div>
-				<section>
-					<h1 className="display-4">
-						ABOUT <span id="spanTitle">US </span>{" "}
-					</h1>
-					<p className="lead">
-						{" "}
-						I DESIGN AND CODE BEAUTIFUL THINGS, AND I LOVE WHAT I DO.
-					</p>
-					<br></br>
-				</section>
+		<div className={"container"}>
+			<div style={styles.paperContainer}>
+				<h1 className="display-4">
+					ABOUT <span id="spanTitle">US </span>{" "}
+				</h1>
+				<p className="lead">
+					{" "}
+					My company is here to provide you the best solution possible.
+				</p>
 			</div>
-
-			<Divider />
 			<br></br>
 
 			<br></br>
@@ -60,6 +64,6 @@ export default function BasicTable() {
 
 			<br></br>
 			<br></br>
-		</Container>
+		</div>
 	);
 }

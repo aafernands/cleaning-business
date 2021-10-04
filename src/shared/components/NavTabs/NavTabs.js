@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	socialIcons: {
 		textAlign: "center",
-		position: "absolute",
+		position: "relative",
 		zIndex: 50,
 		paddingTop: "90px",
 		paddingBottom: "20px",
@@ -144,33 +144,38 @@ function NavTabs({ onToggle }) {
 								</ListItemIcon>
 								<ListItemText primary={"HOME"} />
 							</ListItem>
-							<hr></hr>
+							<br></br>
 							<ListItem button component={Link} to="/about">
 								<ListItemIcon>
 									<PersonIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"ABOUT"} />
 							</ListItem>
-							<hr></hr>
+							<br></br>
 							<ListItem button component={Link} to="/services">
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"SERVICES"} />
 							</ListItem>
-							<hr></hr>
+							<br></br>
 						</List>
 					</MenuList>
 
-					<ListItem button component={Link} to="/contact">
+					{/* <ListItem button component={Link} to="/contact">
 						<ListItemIcon>
 							<PermContactCalendarIcon className={classes.iconStyle} />
 						</ListItemIcon>
 						<ListItemText primary={"CONTACT US"} />
-					</ListItem>
+					</ListItem> */}
 				</div>
 
-				<Button variant="outlined" href="#outlined-buttons">
+				<Button
+					class="buttonNavTab"
+					component={Link}
+					to="/contact"
+					variant="outlined"
+				>
 					CONTACT US
 				</Button>
 
