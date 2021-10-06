@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cleaning-business/static/css/main.91f9bd59.chunk.css",
-    "main.js": "/cleaning-business/static/js/main.da076e1d.chunk.js",
-    "main.js.map": "/cleaning-business/static/js/main.da076e1d.chunk.js.map",
+    "main.js": "/cleaning-business/static/js/main.685ae017.chunk.js",
+    "main.js.map": "/cleaning-business/static/js/main.685ae017.chunk.js.map",
     "runtime-main.js": "/cleaning-business/static/js/runtime-main.f12b8060.js",
     "runtime-main.js.map": "/cleaning-business/static/js/runtime-main.f12b8060.js.map",
     "static/js/2.06f7f81e.chunk.js": "/cleaning-business/static/js/2.06f7f81e.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.f12b8060.js",
     "static/js/2.06f7f81e.chunk.js",
     "static/css/main.91f9bd59.chunk.css",
-    "static/js/main.da076e1d.chunk.js"
+    "static/js/main.685ae017.chunk.js"
   ]
 }
