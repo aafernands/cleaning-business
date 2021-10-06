@@ -10,7 +10,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
 import ReCAPTCHA from "react-google-recaptcha";
 
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		backgroundColor: "white",
@@ -39,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
 		color: "white",
 		fontWeight: 500,
 		textTransform: "capitalize",
+	},
+	container: {
+		paddingLeft: 20,
+		paddingRight: 20,
 	},
 }));
 
@@ -114,10 +117,8 @@ export default function Contact() {
 
 	const [disableSubmit, setDisableSubmit] = useState(true);
 
-
 	return (
-		<Container className="container">
-
+		<Container className={useStyles.container}>
 			<div>
 				<section>
 					<h1 className="display-4">

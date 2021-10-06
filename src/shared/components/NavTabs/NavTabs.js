@@ -66,9 +66,9 @@ const useStyles = makeStyles((theme) => ({
 	socialIcons: {
 		textAlign: "center",
 		position: "relative",
-		zIndex: 50,
-		paddingTop: "90px",
+		zIndex: 280,
 		paddingBottom: "20px",
+		paddingTop: "200px",
 		height: "100%",
 	},
 	outlined: {
@@ -160,6 +160,15 @@ function NavTabs({ onToggle }) {
 							</ListItem>
 							<br></br>
 						</List>
+
+						<Button
+							class="buttonNavTab"
+							component={Link}
+							to="/contact"
+							variant="outlined"
+						>
+							CONTACT US
+						</Button>
 					</MenuList>
 
 					{/* <ListItem button component={Link} to="/contact">
@@ -169,16 +178,6 @@ function NavTabs({ onToggle }) {
 						<ListItemText primary={"CONTACT US"} />
 					</ListItem> */}
 				</div>
-
-				<Button
-					class="buttonNavTab"
-					component={Link}
-					to="/contact"
-					variant="outlined"
-				>
-					CONTACT US
-				</Button>
-
 				<div className={classes.socialIcons}>
 					<a class="icons" href="https://www.facebook.com/">
 						<FacebookIcon color="action" />
