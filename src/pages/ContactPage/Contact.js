@@ -230,7 +230,12 @@ export default function Contact() {
 				</Grid>
 				<Grid item xs={12} lg={6}>
 					<div class="contactInfo">
-						<h5>My Cleaning Business</h5>
+						<h5>
+							INTENSE SHINE
+							<br></br>
+							<br></br>
+							Cleaning Services
+						</h5>
 						<h6>
 							502 Willow Dr <br></br> Ocean Township 07712
 						</h6>
