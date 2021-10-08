@@ -58,7 +58,6 @@ function SwipeableTextMobileStepper() {
 			<Grid container spacing={2}>
 				<Grid item lg={6} md={6} xs={12}>
 					<Box sx={{ maxWidth: 500, flexGrow: 1 }}>
-						
 						<AutoPlaySwipeableViews
 							axis={theme.direction === "rtl" ? "x-reverse" : "x"}
 							index={activeStep}

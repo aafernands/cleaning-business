@@ -12,7 +12,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import PermContactCalendarIcon from "@material-ui/icons/PermContactCalendar";
 import WorkIcon from "@material-ui/icons/Work";
 import PersonIcon from "@material-ui/icons/Person";
 import HomeIcon from "@material-ui/icons/Home";
@@ -20,14 +19,19 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
+import logo from "./logoBlue.png";
 
 const useStyles = makeStyles((theme) => ({
-	// root: {
-	// 	flexGrow: 1,
-	// 	position: "relative",
-	// 	zIndex: 2,
-	// },
-
+	root: {
+		flexGrow: 1,
+		position: "relative",
+		zIndex: 2,
+		
+	},
+	logo: {
+		height: 50,
+		width: 100,
+	},
 	menuButton: {
 		marginRight: theme.spacing(2),
 		[theme.breakpoints.up("sm")]: {
@@ -90,6 +94,8 @@ function NavTabs({ onToggle }) {
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
+						<img className={classes.logo} src={logo} alt="Logo" />
+
 						<IconButton
 							onClick={toggleDrawer(true)}
 							edge="start"
