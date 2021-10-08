@@ -231,7 +231,7 @@ export default function Contact() {
 				<Grid item xs={12} lg={6}>
 					<div class="contactInfo">
 						<h5>
-							INTENSE SHINE
+							NEW SHINE PRO
 							<br></br>
 							<br></br>
 							Cleaning Services

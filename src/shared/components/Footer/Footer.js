@@ -21,7 +21,7 @@ function Footer() {
 
 			<p>
 				<span className="credits-footer">
-					© Copyright 2021 Intense Shine Cleaning Services
+					© Copyright 2021 New Shine Pro | Cleaning Services
 				</span>
 			</p>
 		</footer>
