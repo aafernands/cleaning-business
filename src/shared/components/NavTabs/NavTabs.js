@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		position: "relative",
 		zIndex: 2,
-		
 	},
 	logo: {
 		height: 50,
@@ -176,13 +175,6 @@ function NavTabs({ onToggle }) {
 							CONTACT US
 						</Button>
 					</MenuList>
-
-					{/* <ListItem button component={Link} to="/contact">
-						<ListItemIcon>
-							<PermContactCalendarIcon className={classes.iconStyle} />
-						</ListItemIcon>
-						<ListItemText primary={"CONTACT US"} />
-					</ListItem> */}
 				</div>
 				<div className={classes.socialIcons}>
 					<a class="icons" href="https://www.facebook.com/">
