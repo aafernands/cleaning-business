@@ -25,3 +25,8 @@
 	min-width: 40px !important;
 	flex-shrink: 0;
 }
+
+.MuiSvgIcon-root {
+	position: absolute;
+	left: 220px;
+}
