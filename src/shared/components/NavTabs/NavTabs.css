@@ -62,7 +62,7 @@
 	color: rgba(0, 0, 0, 0.87);
 	padding: 6px 16px;
 	font-size: 0.875rem;
-	min-width: 64px;
+	min-width: 100px !important;
 	box-sizing: border-box;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
@@ -75,9 +75,15 @@
 	text-transform: uppercase;
 }
 
-
 .MuiToolbar-root {
-    display: flex;
-    position: relative;
-    align-items: right !important;
+	display: flex;
+	position: relative;
+	align-items: right !important;
+}
+
+.MuiToolbar-gutters {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
