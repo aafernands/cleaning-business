@@ -10,6 +10,8 @@ import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
 import ReCAPTCHA from "react-google-recaptcha";
 import Divider from "@mui/material/Divider";
+import logo from "./logo.png";
+import "./Contact.css";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -43,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
 	container: {
 		paddingLeft: 20,
 		paddingRight: 20,
-		
 	},
 }));
 
@@ -250,6 +251,13 @@ export default function Contact() {
 					</div>
 				</Grid>
 			</Grid>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<img className="logo" src={logo} alt="Logo" />
+			<br></br>
+			<br></br>
 			<br></br>
 			<br></br>
 		</Container>

@@ -4,6 +4,8 @@ import Accordion from "./Accordion.js";
 import Divider from "@mui/material/Divider";
 import Container from "@material-ui/core/Container";
 import Grid from "@mui/material/Grid";
+import logo from "./logo.png";
+import "./services.css";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -28,7 +30,9 @@ export default function Services() {
 				<br></br>
 				<p className="aboutUs">
 					{" "}
-					New Shine Pro Cleaning Services LLC is fully insured and provices detailed cleaning services to residential and comercial properties in Central Jersey area.  
+					New Shine Pro Cleaning Services LLC is fully insured and provices
+					detailed cleaning services to residential and comercial properties in
+					Central Jersey area.
 				</p>
 				<br></br>
 				<br></br>
@@ -37,6 +41,15 @@ export default function Services() {
 					<Accordion />
 				</div>
 			</Grid>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<img className="logo" src={logo} alt="Logo" />
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
 		</Container>
 	);
 }

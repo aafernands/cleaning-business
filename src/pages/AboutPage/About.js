@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 import cleanImage from "./towel.jpg";
 import Divider from "@mui/material/Divider";
 import { makeStyles } from "@material-ui/core/styles";
+import logo from "./logo.png";
+import "./About.css";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -53,11 +55,16 @@ export default function BasicTable() {
 					consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
 					adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
 				</p>
-				<br></br>
-
-				<br></br>
-				<br></br>
 			</Grid>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<img className="logo" src={logo} alt="Logo" />
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
 		</Container>
 	);
 }

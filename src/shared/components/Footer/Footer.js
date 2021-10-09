@@ -15,7 +15,7 @@ function Footer() {
 			<a class="icons" href="https://www.instagram.com/aafernands">
 				<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />
 			</a>
-			<a class="icons" href="https://www.instagram.com/aafernands">
+			<a class="icons" href="mailto:alexfernands@outlook.com">
 				<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />
 			</a>
 
