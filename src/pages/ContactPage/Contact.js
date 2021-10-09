@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
 import ReCAPTCHA from "react-google-recaptcha";
+import Divider from "@mui/material/Divider";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
 	container: {
 		paddingLeft: 20,
 		paddingRight: 20,
+		
 	},
 }));
 
@@ -120,14 +122,15 @@ export default function Contact() {
 	return (
 		<Container className={useStyles.container}>
 			<div>
-				<section>
-					<h1 className="display-4">
-						CONTACT <span id="spanTitle">US </span>
-					</h1>
-					<p className="lead">
-						Feel free to call us directly if you have any questions.
-					</p>
-				</section>
+				<h1 className="display-4">
+					CONTACT <span id="spanTitle">US </span>
+				</h1>
+				<p className="lead">
+					Feel free to call us directly if you have any questions.
+				</p>
+				<Divider variant="middle" />
+				<br></br>
+				<br></br>
 			</div>
 			<Grid container spacing={2}>
 				<Grid item xs={12} lg={6}>
@@ -247,6 +250,8 @@ export default function Contact() {
 					</div>
 				</Grid>
 			</Grid>
+			<br></br>
+			<br></br>
 		</Container>
 	);
 }

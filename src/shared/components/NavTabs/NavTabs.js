@@ -93,7 +93,7 @@ function NavTabs({ onToggle }) {
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
-						<a href="/home">
+						<a href="/">
 							<img className={classes.logo} src={logo} alt="Logo" />
 						</a>
 

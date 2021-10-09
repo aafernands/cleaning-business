@@ -56,7 +56,6 @@
 .MuiButton-containedPrimary:hover {
 	color: #fff;
 	background-color: #a7a7f5 !important;
-
 }
 
 .MuiButton-root {
@@ -74,4 +73,11 @@
 	border-radius: 0px !important;
 	letter-spacing: 0.02857em;
 	text-transform: uppercase;
+}
+
+
+.MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: right !important;
 }
