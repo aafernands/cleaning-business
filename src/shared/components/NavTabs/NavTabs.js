@@ -19,7 +19,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
-import logo from "./logoBlue.png";
+import logo from "./logoWhite.png";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -93,7 +93,9 @@ function NavTabs({ onToggle }) {
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
-						<img className={classes.logo} src={logo} alt="Logo" />
+						<a href="/home">
+							<img className={classes.logo} src={logo} alt="Logo" />
+						</a>
 
 						<IconButton
 							onClick={toggleDrawer(true)}
