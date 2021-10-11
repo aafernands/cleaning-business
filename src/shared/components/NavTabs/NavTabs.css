@@ -100,17 +100,20 @@
 }
 
 .makeStyles-menuButton-4 {
-	margin-right: 0px !important;
+	padding: 100 !important;
+}
+MuiIconButton-edgeStart {
+    margin-left: 0px !important;
 }
 
 .logo {
-	height: 50px !important;
-	width: 100px !important;
+	height: 70px !important;
+	width: 130px !important;
 	align-items: "center" !important;
 }
 
 @media screen and (max-width: 600px) {
 	.anchorCenter {
-		padding-right: 80px;
+		padding-right: 90px;
 	}
 }
