@@ -103,7 +103,7 @@
 	padding: 100 !important;
 }
 MuiIconButton-edgeStart {
-    margin-left: 0px !important;
+	margin-left: 0px !important;
 }
 
 .logo {
@@ -116,4 +116,8 @@ MuiIconButton-edgeStart {
 	.anchorCenter {
 		padding-right: 90px;
 	}
+}
+
+.makeStyles-menuButton-3 {
+	margin-right: 0px !important;
 }
