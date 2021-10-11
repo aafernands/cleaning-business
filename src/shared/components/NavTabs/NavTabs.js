@@ -82,6 +82,11 @@ const useStyles = makeStyles((theme) => ({
 			backgroundColor: "#35C37D",
 		},
 	},
+	topLine: {
+		backgroundColor: "#35C37D",
+		color: "red",
+		fontSize: 4,
+	},
 }));
 
 function NavTabs({ onToggle }) {
@@ -93,6 +98,7 @@ function NavTabs({ onToggle }) {
 
 	return (
 		<div>
+			<div className={classes.topLine}>New Shine Pro</div>
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
