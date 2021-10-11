@@ -20,6 +20,8 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
 import logo from "./logoWhite.png";
+import Grid from "@mui/material/Grid";
+import CallIcon from "@mui/icons-material/Call";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -30,8 +32,15 @@ const useStyles = makeStyles((theme) => ({
 	logo: {
 		height: 50,
 		width: 100,
+		alignItems: "right",
 	},
 	menuButton: {
+		marginRight: theme.spacing(2),
+		[theme.breakpoints.up("sm")]: {
+			display: "none",
+		},
+	},
+	contactButton: {
 		marginRight: theme.spacing(2),
 		[theme.breakpoints.up("sm")]: {
 			display: "none",
@@ -93,42 +102,48 @@ function NavTabs({ onToggle }) {
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
-						<a href="/">
-							<img className={classes.logo} src={logo} alt="Logo" />
-						</a>
-
-						<IconButton
-							onClick={toggleDrawer(true)}
-							edge="start"
-							className={classes.menuButton}
-							color="inherit"
-							aria-label="menu"
-						>
-							<MenuIcon />
-						</IconButton>
-
-						<div className={classes.desktopBtn}>
-							<Button variant="containedPrimary" component={Link} to="/">
-								HOME
-							</Button>
-
-							<Button variant="containedPrimary" component={Link} to="/about">
-								ABOUT
-							</Button>
-
-							<Button variant="containedPrimary" component={Link} to="/contact">
-								CONTACT US
-							</Button>
-
-							<Button
-								variant="containedPrimary"
-								component={Link}
-								to="/services"
+						<Grid container justify="center" alignItems="flex-end">
+							<IconButton
+								onClick={toggleDrawer(true)}
+								edge="start"
+								className={classes.menuButton}
+								color="inherit"
+								aria-label="menu"
 							>
-								SERVICES
-							</Button>
-						</div>
+								<MenuIcon />
+							</IconButton>
+							<a className="anchorCenter" href="/">
+								<img className={classes.logo} src={logo} alt="Logo" />
+							</a>
+							<IconButton
+								label="CALL US"
+								href="tel:+15555551212"
+								edge="start"
+								className={classes.menuButton}
+								color="inherit"
+								aria-label="menu"
+							>
+								<CallIcon />
+							</IconButton>
+						</Grid>
 					</Toolbar>
+					<div className={classes.desktopBtn}>
+						<Button variant="containedPrimary" component={Link} to="/">
+							HOME
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/about">
+							ABOUT
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/contact">
+							CONTACT US
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/services">
+							SERVICES
+						</Button>
+					</div>
 				</AppBar>
 			</div>
 
