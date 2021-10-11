@@ -27,11 +27,7 @@ const useStyles = makeStyles((theme) => ({
 		position: "relative",
 		zIndex: 2,
 	},
-	logo: {
-		height: 50,
-		width: 100,
-		alignItems: "right",
-	},
+
 	menuButton: {
 		marginRight: theme.spacing(2),
 		[theme.breakpoints.up("sm")]: {
@@ -110,7 +106,7 @@ function NavTabs({ onToggle }) {
 							<MenuIcon />
 						</IconButton>
 						<a className="anchorCenter" href="/">
-							<img className={classes.logo} src={logo} alt="Logo" />
+							<img className="logo" src={logo} alt="Logo" />
 						</a>
 						<IconButton
 							label="CALL US"

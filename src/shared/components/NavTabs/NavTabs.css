@@ -93,12 +93,24 @@
 }
 
 .anchorCenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 50% !important;
 }
 
 .makeStyles-menuButton-4 {
 	margin-right: 0px !important;
+}
+
+.logo {
+	height: 50px !important;
+	width: 100px !important;
+	align-items: "center" !important;
+}
+
+@media screen and (max-width: 600px) {
+	.anchorCenter {
+		padding-right: 80px;
+	}
 }
