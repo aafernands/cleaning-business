@@ -12,7 +12,7 @@ export default function ListHomePage() {
 	return (
 		<div>
 			{" "}
-			<h1>Our Services</h1>
+			<h1>Our Cleaning Services</h1>
 			<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
 				<ListItem>
 					<ListItemAvatar>

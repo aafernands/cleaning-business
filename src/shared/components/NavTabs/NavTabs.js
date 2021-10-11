@@ -21,8 +21,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
 import logo from "./logoWhite.png";
 import Grid from "@mui/material/Grid";
-import CallIcon from "@mui/icons-material/Call";
-
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
@@ -117,13 +116,13 @@ function NavTabs({ onToggle }) {
 							</a>
 							<IconButton
 								label="CALL US"
-								href="tel:+15555551212"
+								href="tel:+9738363080"
 								edge="start"
 								className={classes.menuButton}
 								color="inherit"
 								aria-label="menu"
 							>
-								<CallIcon />
+								<PhoneIphoneIcon />
 							</IconButton>
 						</Grid>
 					</Toolbar>

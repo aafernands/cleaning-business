@@ -9,13 +9,13 @@ function Footer() {
 		<footer class="footerInfo">
 			<h5>GET IN TOUCH</h5>
 
-			<a class="icons" href="https://www.instagram.com/aafernands/">
+			<a class="icons" href="https://www.facebook.com/newshinepro/">
 				<FontAwesomeIcon icon={faFacebook} color="white" size="1x" />
 			</a>
-			<a class="icons" href="https://www.instagram.com/aafernands">
+			<a class="icons" href="https://www.instagram.com/newshinepro">
 				<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />
 			</a>
-			<a class="icons" href="mailto:alexfernands@outlook.com">
+			<a class="icons" href="mailto:newshinepro@gmail.com">
 				<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />
 			</a>
 
