@@ -20,7 +20,6 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
 import logo from "./logoWhite.png";
-import Grid from "@mui/material/Grid";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -101,30 +100,28 @@ function NavTabs({ onToggle }) {
 			<div className={classes.root}>
 				<AppBar position="static">
 					<Toolbar>
-						<Grid container justify="center" alignItems="flex-end">
-							<IconButton
-								onClick={toggleDrawer(true)}
-								edge="start"
-								className={classes.menuButton}
-								color="inherit"
-								aria-label="menu"
-							>
-								<MenuIcon />
-							</IconButton>
-							<a className="anchorCenter" href="/">
-								<img className={classes.logo} src={logo} alt="Logo" />
-							</a>
-							<IconButton
-								label="CALL US"
-								href="tel:+9738363080"
-								edge="start"
-								className={classes.menuButton}
-								color="inherit"
-								aria-label="menu"
-							>
-								<PhoneIphoneIcon />
-							</IconButton>
-						</Grid>
+						<IconButton
+							onClick={toggleDrawer(true)}
+							edge="start"
+							className={classes.menuButton}
+							color="inherit"
+							aria-label="menu"
+						>
+							<MenuIcon />
+						</IconButton>
+						<a className="anchorCenter" href="/">
+							<img className={classes.logo} src={logo} alt="Logo" />
+						</a>
+						<IconButton
+							label="CALL US"
+							href="tel:+9738363080"
+							edge="start"
+							className={classes.menuButton}
+							color="inherit"
+							aria-label="menu"
+						>
+							<PhoneIphoneIcon />
+						</IconButton>
 					</Toolbar>
 					<div className={classes.desktopBtn}>
 						<Button variant="containedPrimary" component={Link} to="/">
