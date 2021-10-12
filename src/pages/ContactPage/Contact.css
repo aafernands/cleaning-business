@@ -39,3 +39,21 @@ p {
 	font-family: "Raleway", sans-serif;
 }
 
+
+.logoBottom {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 10% !important;
+}
+
+@media screen and (max-width: 600px) {
+	.logoBottom {
+		display: block !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		width: 10% !important;
+		/* transform: -50%; */
+	}
+}
+

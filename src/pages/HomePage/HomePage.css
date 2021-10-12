@@ -16,3 +16,17 @@
 	padding-right: 0px !important;
 }
 
+.logo {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+@media screen and (max-width: 600px) {
+	.logo {
+		display: block !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		/* transform: -50%; */
+	}
+}

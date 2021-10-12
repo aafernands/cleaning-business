@@ -45,7 +45,7 @@ export default function Services() {
 			<br></br>
 			<br></br>
 			<br></br>
-			<img className="logo" src={logo} alt="Logo" />
+			<img className="logoBottom" src={logo} alt="Logo" />
 			<br></br>
 			<br></br>
 			<br></br>
