@@ -107,9 +107,10 @@ MuiIconButton-edgeStart {
 }
 
 .logo {
-	height: 70px !important;
-	width: 130px !important;
+	height: 100px !important;
+	width: 200px !important;
 	align-items: "center" !important;
+	margin-top: 0px !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -127,6 +128,12 @@ MuiIconButton-edgeStart {
 	padding-left: 40px;
 	background-color: red;
 	position: relative !important;
-	left: 20px !important;
+	left: 10px !important;
+}
 
+.MuiToolbar-gutters {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
