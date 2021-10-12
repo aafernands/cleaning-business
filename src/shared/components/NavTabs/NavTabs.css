@@ -114,7 +114,7 @@ MuiIconButton-edgeStart {
 
 @media screen and (max-width: 600px) {
 	.anchorCenter {
-		padding-right: 90px;
+		padding-right: 0px;
 	}
 }
 
