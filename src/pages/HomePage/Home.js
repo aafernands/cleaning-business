@@ -123,14 +123,14 @@ function SwipeableTextMobileStepper() {
 				<Grid item xs={12} lg={6}>
 					<ListHomePage />
 
-					{/* <div class="contactInfo">
+					<div class="contactInfo">
 						<br></br>
 						<h1>Our Cleaning Services</h1>
 						<h4>Couches</h4>
 						<h4>Chairs</h4>
 						<h4>Mattress</h4>
 						<h4>Armchair</h4>
-					</div> */}
+					</div>
 				</Grid>
 			</Grid>
 			<br></br>
