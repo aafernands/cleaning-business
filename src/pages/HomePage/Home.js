@@ -12,6 +12,7 @@ import "./HomePage.css";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import ListHomePage from "./ListHomePage";
+import InstagramEmbed from "react-instagram-embed";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -134,6 +135,7 @@ function SwipeableTextMobileStepper() {
 			</Grid>
 			<br></br>
 			<br></br>
+			<div class="elfsight-app-2364efd9-898d-48f0-a0b6-02ce3ce75c17">here</div>
 		</Container>
 	);
 }
