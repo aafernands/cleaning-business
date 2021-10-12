@@ -83,8 +83,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	topLine: {
-		backgroundColor: "#1A237E",
-		color: "#1A237E",
+		backgroundColor: "#44AC3B",
+		color: "#44AC3B",
 		fontSize: 4,
 	},
 }));
@@ -117,7 +117,7 @@ function NavTabs({ onToggle }) {
 						<IconButton
 							href="tel:+9738363080"
 							edge="start"
-							className={classes.menuButton}
+							className="menuButtonCall"
 							color="inherit"
 							aria-label="menu"
 						>
