@@ -127,13 +127,13 @@ MuiIconButton-edgeStart {
 
 .logo {
 	height: 60px !important;
-	width: 140px !important;
+	width: 130px !important;
 	align-items: "center" !important;
 	margin-top: 0px !important;
 	display: block !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
-	padding: 0px !important;
+	padding-right: 10px !important;
 }
 
 @media screen and (max-width: 600px) {
