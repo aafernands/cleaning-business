@@ -15,44 +15,19 @@ export default function ListHomePage() {
 			<h1>Our Cleaning Services</h1>
 			<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
 				<ListItem>
-					<ListItemAvatar>
-						<Avatar>
-							<ImageIcon />
-						</Avatar>
-					</ListItemAvatar>
-					<ListItemText primary="Sofas" secondary="" />
+					<ListItemText primary="Sofa Cleaning" secondary="" />
 				</ListItem>
 				<ListItem>
-					<ListItemAvatar>
-						<Avatar>
-							<WorkIcon />
-						</Avatar>
-					</ListItemAvatar>
-					<ListItemText primary="Chairs" secondary="" />
+					<ListItemText primary="Chair Cleaning" secondary="" />
 				</ListItem>
 				<ListItem>
-					<ListItemAvatar>
-						<Avatar>
-							<BeachAccessIcon />
-						</Avatar>
-					</ListItemAvatar>
-					<ListItemText primary="Vehicles" secondary="" />
+					<ListItemText primary="Vehicle Cleaning" secondary="" />
 				</ListItem>
 				<ListItem>
-					<ListItemAvatar>
-						<Avatar>
-							<BeachAccessIcon />
-						</Avatar>
-					</ListItemAvatar>
-					<ListItemText primary="Matresses" secondary="" />
+					<ListItemText primary="Matress Cleaning" secondary="" />
 				</ListItem>
 				<ListItem>
-					<ListItemAvatar>
-						<Avatar>
-							<BeachAccessIcon />
-						</Avatar>
-					</ListItemAvatar>
-					<ListItemText primary="Airmchairs" secondary="" />
+					<ListItemText primary="Airmchair Cleaning" secondary="" />
 				</ListItem>
 			</List>
 		</div>

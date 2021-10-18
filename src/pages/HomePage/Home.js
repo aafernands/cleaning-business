@@ -13,6 +13,7 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import ListHomePage from "./ListHomePage";
 import InstagramEmbed from "react-instagram-embed";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -134,6 +135,19 @@ function SwipeableTextMobileStepper() {
 				</Grid>
 			</Grid>
 			<br></br>
+			<div class="covid">
+				<h1>HOW IT WORKS</h1>
+				<div class="block">
+					{" "}
+					<CalendarTodayIcon fotnSize="iconStyle" />
+					<h4>SCHEDULE AN APPOINTMENT</h4>
+				</div>
+				<h1>Sofa cleaning at home</h1>
+				<p>
+					The covid19 measures are well respected: masks, gloves, protective
+					slippers, distance
+				</p>
+			</div>
 			<br></br>
 			<div class="elfsight-app-2364efd9-898d-48f0-a0b6-02ce3ce75c17">here</div>
 		</Container>
