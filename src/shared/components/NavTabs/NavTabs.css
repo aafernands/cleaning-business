@@ -1,6 +1,6 @@
 .buttonNavTab {
 	border-style: solid;
-	border-color: #f7d514;
+	border-color: #44AC3B;
 	background-color: rgb(255, 255, 255);
 	padding: 15px;
 	margin: 30px 83px 100px 86px;
@@ -16,7 +16,7 @@
 }
 
 .buttonNavTab:hover {
-	background-color: #ddda0881;
+	background-color: #aaaaaa;
 }
 
 .MuiListItemIcon-root {
@@ -142,4 +142,3 @@ MuiIconButton-edgeStart {
 		margin-right: auto !important;
 	}
 }
-

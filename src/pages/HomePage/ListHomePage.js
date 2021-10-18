@@ -11,26 +11,16 @@ import Container from "@material-ui/core/Container";
 
 export default function ListHomePage() {
 	return (
-		<div>
+		<div class="bloc2k">
 			{" "}
-			<h1> Cleaning Services</h1>
-			<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-				<ListItem>
-					<ListItemText primary="Sofa Cleaning" secondary="" />
-				</ListItem>
-				<ListItem>
-					<ListItemText primary="Chair Cleaning" secondary="" />
-				</ListItem>
-				<ListItem>
-					<ListItemText primary="Vehicle Cleaning" secondary="" />
-				</ListItem>
-				<ListItem>
-					<ListItemText primary="Matress Cleaning" secondary="" />
-				</ListItem>
-				<ListItem>
-					<ListItemText primary="Airmchair Cleaning" secondary="" />
-				</ListItem>
-			</List>
+			<h1> CLEANING SERVICES</h1>
+			<div class="contactInfo">
+				<h4>Couch Cleaning</h4>
+				<h4>Chair Cleaning</h4>
+				<h4>Vehicle Cleaning</h4>
+				<h4>Mattress Cleaning</h4>
+				<h4>Armchair Cleaning</h4>
+			</div>
 		</div>
 	);
 }

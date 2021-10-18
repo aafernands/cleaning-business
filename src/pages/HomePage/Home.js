@@ -56,9 +56,10 @@ function SwipeableTextMobileStepper() {
 	return (
 		<Container>
 			<br></br>
-			<br></br> <Divider variant="middle" />
-			<Grid container spacing={2 }>
-				<Grid item lg={6} md={6} xs={12}>
+			<Divider variant="middle" />
+			<br></br>
+			<Grid container spacing={2}>
+				<Grid item xs={12} md={4} lg={4} >
 					<Box sx={{ maxWidth: 500, flexGrow: 1 }}>
 						<AutoPlaySwipeableViews
 							axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -121,7 +122,7 @@ function SwipeableTextMobileStepper() {
 					</Box>
 				</Grid>
 
-				<Grid item xs={12} lg={6}></Grid>
+				<Grid item xs={12} md={4} lg={2}></Grid>
 				<ListHomePage />
 			</Grid>
 			<br></br>
@@ -129,9 +130,8 @@ function SwipeableTextMobileStepper() {
 				<br></br>
 				<br></br>
 				<br></br>
-
+				<br></br> <Divider variant="middle" />
 				<h1>HOW IT WORKS</h1>
-
 				<Container>
 					<div class="block">
 						{" "}
@@ -167,7 +167,6 @@ function SwipeableTextMobileStepper() {
 					<br></br>
 					<br></br>
 				</Container>
-
 				<Container>
 					<div class="block">
 						{" "}
@@ -184,10 +183,14 @@ function SwipeableTextMobileStepper() {
 					<br></br>
 					<br></br>
 				</Container>
+				<Divider variant="middle" />
+				<br></br>
 				<p className="covid">
 					The covid19 measures are well respected: masks, gloves, protective
 					slippers, distance
 				</p>
+				<br></br> <Divider variant="middle" />
+				<br></br>
 			</div>
 			<br></br>
 			<div class="elfsight-app-2364efd9-898d-48f0-a0b6-02ce3ce75c17">here</div>
