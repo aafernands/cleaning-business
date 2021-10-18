@@ -7,12 +7,13 @@ import Avatar from "@mui/material/Avatar";
 import ImageIcon from "@mui/icons-material/Image";
 import WorkIcon from "@mui/icons-material/Work";
 import BeachAccessIcon from "@mui/icons-material/BeachAccess";
+import Container from "@material-ui/core/Container";
 
 export default function ListHomePage() {
 	return (
 		<div>
 			{" "}
-			<h1>Our Cleaning Services</h1>
+			<h1> Cleaning Services</h1>
 			<List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
 				<ListItem>
 					<ListItemText primary="Sofa Cleaning" secondary="" />

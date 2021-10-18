@@ -121,7 +121,7 @@ function NavTabs({ onToggle }) {
 							color="inherit"
 							aria-label="menu"
 						>
-							<PhoneIphoneIcon />
+							<PhoneIphoneIcon fontSize="large" />
 						</IconButton>
 					</Toolbar>
 					<div className={classes.desktopBtn}>

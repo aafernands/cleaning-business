@@ -12,9 +12,9 @@ import "./HomePage.css";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import ListHomePage from "./ListHomePage";
-import InstagramEmbed from "react-instagram-embed";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
-
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
@@ -57,7 +57,7 @@ function SwipeableTextMobileStepper() {
 		<Container>
 			<br></br>
 			<br></br> <Divider variant="middle" />
-			<Grid container spacing={2}>
+			<Grid container spacing={2 }>
 				<Grid item lg={6} md={6} xs={12}>
 					<Box sx={{ maxWidth: 500, flexGrow: 1 }}>
 						<AutoPlaySwipeableViews
@@ -121,35 +121,80 @@ function SwipeableTextMobileStepper() {
 					</Box>
 				</Grid>
 
-				<Grid item xs={12} lg={6}>
-					<ListHomePage />
-
-					{/* <div class="contactInfo">
-						<br></br>
-						<h1>Our Cleaning Services</h1>
-						<h4>Couches</h4>
-						<h4>Chairs</h4>
-						<h4>Mattress</h4>
-						<h4>Armchair</h4>
-					</div> */}
-				</Grid>
+				<Grid item xs={12} lg={6}></Grid>
+				<ListHomePage />
 			</Grid>
 			<br></br>
-			<div class="covid">
+			<div class="howItWorksContainer">
+				<br></br>
+				<br></br>
+				<br></br>
+
 				<h1>HOW IT WORKS</h1>
-				<div class="block">
-					{" "}
-					<CalendarTodayIcon fotnSize="iconStyle" />
-					<h4>SCHEDULE AN APPOINTMENT</h4>
-				</div>
-				<h1>Sofa cleaning at home</h1>
-				<p>
+
+				<Container>
+					<div class="block">
+						{" "}
+						<br></br>
+						<br></br>
+						<CalendarTodayIcon fotnSize="iconStyle" />
+						<br></br>
+						<br></br>
+						<h4>SCHEDULE AN APPOINTMENT</h4>
+						<Button href="tel:+9738363080" variant="outlined">
+							CALL US
+						</Button>
+						<br></br>
+						<br></br>
+						<br></br>
+					</div>
+					<br></br>
+					<br></br>
+				</Container>
+				<Container>
+					<div class="block">
+						{" "}
+						<br></br>
+						<br></br>
+						<LocalShippingIcon fotnSize="iconStyle" />
+						<br></br>
+						<br></br>
+						<h4>OUR TEAM WITH COME TO YOU</h4>
+						<br></br>
+						<br></br>
+						<br></br>
+					</div>
+					<br></br>
+					<br></br>
+				</Container>
+
+				<Container>
+					<div class="block">
+						{" "}
+						<br></br>
+						<br></br>
+						<AssignmentTurnedInIcon fotnSize="iconStyle" />
+						<br></br>
+						<br></br>
+						<h4>AFTER 1-2 HOURS WE FINISH*</h4>
+						<br></br>
+						<br></br>
+						<br></br>
+					</div>
+					<br></br>
+					<br></br>
+				</Container>
+				<p className="covid">
 					The covid19 measures are well respected: masks, gloves, protective
 					slippers, distance
 				</p>
 			</div>
 			<br></br>
 			<div class="elfsight-app-2364efd9-898d-48f0-a0b6-02ce3ce75c17">here</div>
+			<p>
+				*Depending on type of service. Click <a href="/about">here</a> for more
+				info more here{" "}
+			</p>
 		</Container>
 	);
 }
