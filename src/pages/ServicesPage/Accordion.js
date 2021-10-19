@@ -4,10 +4,13 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import couch from "./couch.jpeg";
 
 export default function SimpleAccordion() {
 	return (
 		<div className="accordionStyle">
+			<img className="accordioImagenStyle" src={couch} alt="Couch" />
+
 			<Accordion>
 				<AccordionSummary
 					expandIcon={<ExpandMoreIcon />}

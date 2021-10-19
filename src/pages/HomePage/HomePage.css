@@ -90,3 +90,8 @@ h1 {
 }
 
 
+.accordioImagenStyle {
+	height: 600px;
+	width: 850px;
+	align-items:center;
+}
