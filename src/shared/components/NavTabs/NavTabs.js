@@ -112,6 +112,7 @@ function NavTabs({ onToggle }) {
 							<MenuIcon />
 						</IconButton>
 						<a className="anchorCenter" href="/">
+							
 							<img className="logo" src={logo} alt="Logo" />
 						</a>
 						<IconButton

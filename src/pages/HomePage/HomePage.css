@@ -44,10 +44,10 @@
 	margin-right: auto;
 	justify-content: center;
 	font-family: "Raleway", sans-serif;
-	color: rgb(59, 59, 59);
+	color: rgb(255, 255, 255);
 	text-align: center;
-	background-color: #44ac3b;
 	display: inline-block;
+	background-color: #9bb399;
 }
 
 .css-i4bv87-MuiSvgIcon-root {
@@ -60,11 +60,31 @@
 	font-size: 20px;
 }
 
+.covidIcon {
+	color: red !important;
+}
+
 .notes {
 	font-size: 10px;
 }
 
 h1 {
 	font-size: 4rem;
-	color: rgb(255, 251, 251);
+	color: rgb(56, 56, 56);
+	font-family: "Raleway", sans-serif;
+}
+
+.iconStyleCalendar {
+	height: 120px;
+	width: 120px;
+}
+
+.iconStyleTruck {
+	height: 100px;
+	width: 100px;
+}
+
+.iconStyleDone {
+	height: 90px;
+	width: 90px;
 }

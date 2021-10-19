@@ -4,13 +4,18 @@ import "./HomePage.css";
 export default function ListHomePage() {
 	return (
 		<div class="bloc2k">
+			<br></br>
+			<br></br>
+			<br></br>
 			<h1> CLEANING SERVICES</h1>
 			<div class="contactInfo">
-				<h4>Couch Cleaning</h4>
-				<h4>Chair Cleaning</h4>
-				<h4>Vehicle Cleaning</h4>
-				<h4>Mattress Cleaning</h4>
-				<h4>Armchair Cleaning</h4>
+				<h2>Couch</h2>
+				<h2>Chair</h2>
+				<h2>Vehicle</h2>
+				<h2>Mattress</h2>
+				<h2>Armchair</h2>
+				<br></br>
+				<br></br>
 			</div>
 		</div>
 	);
