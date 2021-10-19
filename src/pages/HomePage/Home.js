@@ -24,9 +24,7 @@ function SwipeableTextMobileStepper() {
 					<ListHomePage />
 				</Grid>
 			</Grid>
-			<br></br>
 			<div class="howItWorksContainer">
-				<br></br>
 				<Container>
 					<br></br> <Divider variant="middle" />
 					<h1>HOW IT WORKS</h1>
