@@ -27,18 +27,11 @@ form {
 	padding: 20px;
 }
 
-.contactInfo {
-	margin-top: 100px;
-	text-align: center;
-	padding: 10px;
-	color: black;
-	font-family: "Raleway", sans-serif;
-}
+
 p {
 	color: rgb(0, 0, 0) !important;
 	font-family: "Raleway", sans-serif;
 }
-
 
 .logoBottom {
 	display: block !important;
@@ -56,4 +49,3 @@ p {
 		/* transform: -50%; */
 	}
 }
-

@@ -15,6 +15,9 @@ import ListHomePage from "./ListHomePage";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import AssignmentTurnedInIcon from "@mui/icons-material/AssignmentTurnedIn";
+import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
+import Carousel from "../../pages/HomePage/components/Carousel/Carousel";
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
@@ -59,86 +62,27 @@ function SwipeableTextMobileStepper() {
 			<Divider variant="middle" />
 			<br></br>
 			<Grid container spacing={2}>
-				<Grid item xs={12} md={4} lg={4} >
-					<Box sx={{ maxWidth: 500, flexGrow: 1 }}>
-						<AutoPlaySwipeableViews
-							axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-							index={activeStep}
-							onChangeIndex={handleStepChange}
-							enableMouseEvents
-						>
-							{images.map((step, index) => (
-								<div key={step.label}>
-									{Math.abs(activeStep - index) <= 2 ? (
-										<Box
-											component="img"
-											sx={{
-												height: 400,
-												display: "block",
-												maxWidth: 500,
-												overflow: "hidden",
-												width: "100%",
-											}}
-											src={step.imgPath}
-											alt={step.label}
-										/>
-									) : null}
-								</div>
-							))}
-						</AutoPlaySwipeableViews>
-						<MobileStepper
-							steps={maxSteps}
-							position="static"
-							activeStep={activeStep}
-							nextButton={
-								<Button
-									size="small"
-									onClick={handleNext}
-									disabled={activeStep === maxSteps - 1}
-								>
-									Next
-									{theme.direction === "rtl" ? (
-										<KeyboardArrowLeft />
-									) : (
-										<KeyboardArrowRight />
-									)}
-								</Button>
-							}
-							backButton={
-								<Button
-									size="small"
-									onClick={handleBack}
-									disabled={activeStep === 0}
-								>
-									{theme.direction === "rtl" ? (
-										<KeyboardArrowRight />
-									) : (
-										<KeyboardArrowLeft />
-									)}
-									Back
-								</Button>
-							}
-						/>
-					</Box>
+				<Grid item xs={12} md={8} lg={8}>
+					<Carousel />
 				</Grid>
 
-				<Grid item xs={12} md={4} lg={2}></Grid>
-				<ListHomePage />
+				<Grid item xs={12} md={4} lg={4}>
+					<ListHomePage />
+				</Grid>
 			</Grid>
 			<br></br>
 			<div class="howItWorksContainer">
 				<br></br>
-				<br></br>
-				<br></br>
-				<br></br> <Divider variant="middle" />
-				<h1>HOW IT WORKS</h1>
 				<Container>
+					<br></br> <Divider variant="middle" />
+					<h1>HOW IT WORKS</h1>
 					<div class="block">
 						{" "}
 						<br></br>
 						<br></br>
-						<CalendarTodayIcon fotnSize="iconStyle" />
 						<br></br>
+
+						<CalendarTodayIcon fotnSize="iconStyle" />
 						<br></br>
 						<h4>SCHEDULE AN APPOINTMENT</h4>
 						<Button href="tel:+9738363080" variant="outlined">
@@ -146,7 +90,6 @@ function SwipeableTextMobileStepper() {
 						</Button>
 						<br></br>
 						<br></br>
-						<br></br>
 					</div>
 					<br></br>
 					<br></br>
@@ -154,13 +97,13 @@ function SwipeableTextMobileStepper() {
 				<Container>
 					<div class="block">
 						{" "}
+						<br></br>
+						<br></br>
 						<br></br>
 						<br></br>
 						<LocalShippingIcon fotnSize="iconStyle" />
 						<br></br>
-						<br></br>
 						<h4>OUR TEAM WITH COME TO YOU</h4>
-						<br></br>
 						<br></br>
 						<br></br>
 					</div>
@@ -172,6 +115,9 @@ function SwipeableTextMobileStepper() {
 						{" "}
 						<br></br>
 						<br></br>
+						<br></br>
+						<br></br>
+
 						<AssignmentTurnedInIcon fotnSize="iconStyle" />
 						<br></br>
 						<br></br>
@@ -186,15 +132,17 @@ function SwipeableTextMobileStepper() {
 				<Divider variant="middle" />
 				<br></br>
 				<p className="covid">
-					The covid19 measures are well respected: masks, gloves, protective
-					slippers, distance
+					<HealthAndSafetyIcon />
+					<br></br>
+					The covid19 measures are well <br></br>
+					respected: masks, gloves, protective slippers, distance
 				</p>
 				<br></br> <Divider variant="middle" />
 				<br></br>
 			</div>
 			<br></br>
 			<div class="elfsight-app-2364efd9-898d-48f0-a0b6-02ce3ce75c17">here</div>
-			<p>
+			<p className="notes">
 				*Depending on type of service. Click <a href="/about">here</a> for more
 				info more here{" "}
 			</p>
