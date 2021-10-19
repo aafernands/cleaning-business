@@ -5,8 +5,6 @@ export default function ListHomePage() {
 	return (
 		<div class="bloc2k">
 			<br></br>
-			<br></br>
-			<br></br>
 			<h1> CLEANING SERVICES</h1>
 			<div class="contactInfo">
 				<h2>Couch</h2>
