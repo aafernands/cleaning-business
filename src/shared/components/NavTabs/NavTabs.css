@@ -1,6 +1,6 @@
 .buttonNavTab {
 	border-style: solid;
-	border-color: #44AC3B;
+	border-color: #44ac3b;
 	background-color: rgb(255, 255, 255);
 	padding: 15px;
 	margin: 30px 83px 100px 86px;
@@ -88,6 +88,12 @@
 	padding-bottom: 20px;
 }
 
+@media screen and (max-width: 600px) {
+	.MuiToolbar-gutters {
+		padding-bottom: 40px;
+	}
+}
+
 .css-19sicoy-MuiGrid-root {
 	text-align: center !important;
 }
@@ -125,8 +131,8 @@ MuiIconButton-edgeStart {
 }
 
 .logo {
-	height: 60px !important;
-	width: 130px !important;
+	height: 80px !important;
+	width: 150px !important;
 	align-items: "center" !important;
 	margin-top: 0px !important;
 	display: block !important;
@@ -141,4 +147,14 @@ MuiIconButton-edgeStart {
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
+}
+
+.makeStyles-desktopBtn-5 {
+	width: 450px !important;
+	position: relative;
+	top: -60px;
+}
+
+.css-mhc70k-MuiGrid-root > .MuiGrid-item {
+	padding-top: 0px !important;
 }
