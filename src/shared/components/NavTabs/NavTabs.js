@@ -138,6 +138,10 @@ function NavTabs({ onToggle }) {
 							CONTACT US
 						</Button>
 
+						<Button variant="containedPrimary" component={Link} to="/faqs">
+							FAQS
+						</Button>
+
 						<Button variant="containedPrimary" component={Link} to="/services">
 							SERVICES
 						</Button>
@@ -172,6 +176,14 @@ function NavTabs({ onToggle }) {
 								<ListItemText primary={"ABOUT"} />
 							</ListItem>
 							<br></br>
+							<ListItem button component={Link} to="/faqs">
+								<ListItemIcon>
+									<PersonIcon className={classes.iconStyle} />
+								</ListItemIcon>
+								<ListItemText primary={"FAQS"} />
+							</ListItem>
+														<br></br>
+
 							<ListItem button component={Link} to="/services">
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />

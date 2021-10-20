@@ -5,7 +5,6 @@ img {
 .AccordionStyle {
 	color: black;
 	align-items: center
-	
 }
 
 .contactBox {
@@ -36,3 +35,8 @@ img {
 		/* transform: -50%; */
 	}
 }
+
+
+ .AccordionStyle{
+	font-family: "Raleway", sans-serif;
+ }

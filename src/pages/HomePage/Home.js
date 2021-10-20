@@ -33,8 +33,8 @@ function SwipeableTextMobileStepper() {
 						<br></br>
 						<img className="iconStyleCalendar" src={calendar} alt="Calendar" />
 						<h4>SCHEDULE AN APPOINTMENT</h4>
-						<Button href="tel:+9738363080" variant="outlined">
-							CALL US
+						<Button href="https://www.appointfix.com/New-Shine-Pro" variant="outlined">
+							BOOK ONLINE
 						</Button>
 						<br></br>
 						<br></br>
