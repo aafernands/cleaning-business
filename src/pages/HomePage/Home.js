@@ -51,7 +51,7 @@ function SwipeableTextMobileStepper() {
 						<br></br>
 						<img className="iconStyleTruck" src={truck} alt="truck" />
 						<br></br>
-						<h4>OUR TEAM WITH COME TO YOU</h4>
+						<h4>OUR TEAM WIll COME TO YOU</h4>
 						<br></br>
 						<br></br>
 					</div>
