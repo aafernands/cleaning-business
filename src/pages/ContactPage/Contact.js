@@ -126,9 +126,7 @@ export default function Contact() {
 				<h1 className="display-4">
 					CONTACT <span id="spanTitle">US </span>
 				</h1>
-				<p className="lead">
-					Feel free to call us directly if you have any questions.
-				</p>
+				
 				<Divider variant="middle" />
 				<br></br>
 				<br></br>
@@ -240,13 +238,10 @@ export default function Contact() {
 							<br></br>
 							Cleaning Services
 						</h5>
-						<h6>
-							502 Willow Dr <br></br> Ocean Township 07712
-						</h6>
 						<h2>+1 9738363080</h2>
 
-						<p component={Link} to="mailto:alexfernands@outlook.com">
-							alexfernands@outlook.com"
+						<p component={Link} to="mailto:newshinepro@gmail.com">
+							newshinepro@gmail.com"
 						</p>
 					</div>
 				</Grid>

@@ -30,7 +30,7 @@ export default function ControlledAccordions() {
 				</AccordionSummary>
 				<AccordionDetails>
 					<Typography>
-						There's a couple of cators that will determin the cost of the
+						There's a couple of fators that will determin the cost of the
 						service such as: tasks you want done, type of stains on surfaces,
 						pets, etc. Contact us and will can set up a meeting at your home ot
 						office for a quote specific to your needs. Also in some cases

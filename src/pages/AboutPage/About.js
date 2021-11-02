@@ -7,6 +7,7 @@ import Divider from "@mui/material/Divider";
 import { makeStyles } from "@material-ui/core/styles";
 import logo from "./logo.png";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -20,37 +21,55 @@ export default function BasicTable() {
 
 	return (
 		<Container className={useStyles.container}>
-			<Grid>
-				<div className="paperContainer">
-					{/* <img src={cleanImage} alt="Cleaning" /> */}
+			<div className="paperContainer">
+				{/* <img src={cleanImage} alt="Cleaning" /> */}
 
-					<h1 className="display-4">
-						ABOUT <span id="spanTitle">US </span>{" "}
-					</h1>
-				</div>
-				<Divider variant="middle" />
+				<h1 className="display-4">
+					ABOUT <span id="spanTitle">US </span>{" "}
+				</h1>
+			</div>
 
-				<br></br>
-				<br></br>
-				<p className="aboutUs">
-					{" "}
-					Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor
-					sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-					consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-					adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-					elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
-					dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-					consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-					adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-					elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
-					dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-					consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-					adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-					elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
-					dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-					consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-					adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit{" "}
-				</p>
+			<Grid container spacing={2}>
+				<Grid item xs={12} lg={6}>
+					<div className="contactBox">
+						<p className="aboutUs">
+							{" "}
+							Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
+							dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit
+							amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+							ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+							sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+							ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
+							sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
+							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
+							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
+							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
+							ipsum dolor sit amet, consectetur adipiscing elit{" "}
+						</p>{" "}
+					</div>
+				</Grid>
+
+				<Grid>
+					<div class="contactInfo">
+						<h5>
+							NEW SHINE PRO
+							<br></br>
+							<br></br>
+							Cleaning Services
+						</h5>
+						<h2>+1 9738363080</h2>
+
+						<p component={Link} to="mailto:newshinepro@gmail.com">
+							newshinepro@gmail.com"
+						</p>
+					</div>
+				</Grid>
 			</Grid>
 
 			<div class="elfsight-app-1663a24b-88ce-4155-b5e5-602984121622"></div>
