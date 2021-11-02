@@ -27,10 +27,6 @@ export default function BasicTable() {
 					<h1 className="display-4">
 						ABOUT <span id="spanTitle">US </span>{" "}
 					</h1>
-					<p className="lead">
-						{" "}
-						My company is here to provide you the best solution possible.
-					</p>
 				</div>
 				<Divider variant="middle" />
 
