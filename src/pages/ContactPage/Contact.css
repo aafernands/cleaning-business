@@ -49,18 +49,3 @@ p {
 	}
 }
 
-.contactInfo {
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	font-size: large;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
-	font-family: "Raleway", sans-serif;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	display: inline-block;
-	background-color: #9bb399;
-}

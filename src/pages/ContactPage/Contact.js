@@ -46,6 +46,19 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 20,
 		paddingRight: 20,
 	},
+	contactInfo: {
+		height: "100%",
+		width: "100%",
+		margin: "auto",
+		fontSize: "large",
+		display: "block",
+		marginLeft: "auto",
+		marginRight: "auto",
+		justifyContent: "center",
+		fontFamily: "Raleway",
+		textAlign: "center",
+		boxShadow: "0 0 5px #0000005e",
+	},
 }));
 
 const services = [
@@ -123,11 +136,13 @@ export default function Contact() {
 	return (
 		<Container className={useStyles.container}>
 			<div>
+				<br></br>
+				<br></br>
+
 				<h1 className="display-4">
 					CONTACT <span id="spanTitle">US </span>
 				</h1>
-				
-				<Divider variant="middle" />
+				<br></br>
 				<br></br>
 				<br></br>
 			</div>
@@ -230,19 +245,38 @@ export default function Contact() {
 						</form>
 					</div>
 				</Grid>
+				<br></br>
+
 				<Grid item xs={12} lg={6}>
-					<div class="contactInfo">
-						<h5>
-							NEW SHINE PRO
+					<div className={classes.contactInfo}>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+
+						<h2>
+							NEW SHINE PRO LLC
 							<br></br>
-							<br></br>
-							Cleaning Services
-						</h5>
-						<h2>+1 9738363080</h2>
+						</h2>
+						<h4>Cleaning Services</h4>
+						<br></br>
+
+						<h4>+1 9738363080</h4>
 
 						<p component={Link} to="mailto:newshinepro@gmail.com">
 							newshinepro@gmail.com"
 						</p>
+
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
 					</div>
 				</Grid>
 			</Grid>

@@ -47,7 +47,7 @@
 	color: rgb(255, 255, 255);
 	text-align: center;
 	display: inline-block;
-	background-color: #9bb399;
+	background-color: #262b52;
 }
 
 .css-i4bv87-MuiSvgIcon-root {
@@ -70,9 +70,11 @@
 
 h1 {
 	font-size: 3rem;
-	color: rgb(56, 56, 56);
+	color: #262b52;
 	font-family: "Raleway", sans-serif;
 }
+
+
 
 .iconStyleCalendar {
 	height: 120px;
@@ -89,9 +91,8 @@ h1 {
 	width: 90px;
 }
 
-
 .accordioImagenStyle {
 	height: 600px;
 	width: 850px;
-	align-items:center;
+	align-items: center;
 }

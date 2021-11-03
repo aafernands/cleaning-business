@@ -135,7 +135,7 @@ function NavTabs({ onToggle }) {
 						</Button>
 
 						<Button variant="containedPrimary" component={Link} to="/contact">
-							CONTACT US
+							CONTACT
 						</Button>
 
 						<Button variant="containedPrimary" component={Link} to="/faqs">

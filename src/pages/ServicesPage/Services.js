@@ -12,6 +12,12 @@ const useStyles = makeStyles((theme) => ({
 		paddingLeft: 20,
 		paddingRight: 20,
 	},
+	text: {
+		padding: "20px 80px 20px 80px",
+		fontFamily: "Raleway",
+		textAlign: "justify",
+		color: "rgb(0, 0, 0)",
+	},
 }));
 
 export default function Services() {
@@ -19,28 +25,32 @@ export default function Services() {
 
 	return (
 		<Container className={useStyles.container}>
-			<Grid>
-				<h1 className="display-4">SERVICES</h1>
-				<p className="lead">
+			<Grid container spacing={2}>
+				<Grid item xs={12} lg={12}>
 					{" "}
-					<i>HERE YOU CAN HAVE A GLIMPSE OF MY WORK </i>
-				</p>
-				<Divider variant="middle" />
-				<br></br>
-				<br></br>
-				<p className="aboutUs">
-					{" "}
-					New Shine Pro Cleaning Services LLC is fully insured and provices
-					detailed cleaning services to residential and comercial properties in
-					Central Jersey area.
-				</p>
-				<br></br>
-				<br></br>
-
-				<div>
-					<Accordion />
-				</div>
+					<br></br>
+					<br></br>
+					<br></br>
+					<h1 className="display-4">SERVICES</h1>
+					<br></br>
+					<br></br>
+					<br></br>
+					<div className={classes.text}>
+						<p className="aboutUs">
+							{" "}
+							New Shine Pro Cleaning Services LLC is fully insured and provices
+							detailed cleaning services to residential and comercial properties
+							in Central Jersey area.
+						</p>
+					</div>
+					<br></br>
+					<br></br>
+					<div>
+						<Accordion />
+					</div>
+				</Grid>
 			</Grid>
+
 			<br></br>
 			<br></br>
 			<br></br>

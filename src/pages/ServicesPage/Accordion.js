@@ -9,7 +9,6 @@ import couch from "./couch.jpeg";
 export default function SimpleAccordion() {
 	return (
 		<div className="accordionStyle">
-			<img className="accordioImagenStyle" src={couch} alt="Couch" />
 
 			<Accordion>
 				<AccordionSummary
