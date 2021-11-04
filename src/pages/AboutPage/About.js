@@ -10,6 +10,7 @@ import "./About.css";
 import { Link } from "react-router-dom";
 import { Box, Avatar, Typography } from "@material-ui/core";
 import Logo from "./alex.png";
+import Image from "./image.png";
 
 const useStyles = makeStyles((theme) => ({
 	container: {
@@ -20,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
 		width: theme.spacing(40),
 		height: theme.spacing(40),
 		margin: theme.spacing(1),
+	},
+	image: {
+		width: theme.spacing(40),
+		height: theme.spacing(40),
+		margin: theme.spacing(9),
 	},
 	avatarBox: {
 		fontFamily: "Raleway",
@@ -39,9 +45,8 @@ const useStyles = makeStyles((theme) => ({
 		padding: "20px 80px 20px 80px",
 		fontFamily: "Raleway",
 		textAlign: "justify",
-		boxShadow: "0 0 5px #0000005e",
+		// boxShadow: "0 0 5px #0000005e",
 		color: "rgb(0, 0, 0)",
-		textAlign: "justify",
 		justifyContent: "center",
 		display: "flex",
 	},
@@ -87,18 +92,29 @@ export default function BasicTable() {
 							<h4>**We are fuly insured</h4>
 							<br></br>
 							<br></br>
-							<h2>Our Team</h2>
+							{/* <h2>Meet Our Team</h2>
 							<br></br>
 							<br></br>
 							<Avatar className={classes.avatar} src={Logo} alt="Alex" />
+							<br></br>
+							<br></br>
+							<h4> Alex Fernandes </h4>
+							<br></br>
+							<br></br>
+							<Avatar className={classes.avatar} src={Logo} alt="Alex" />
+							<br></br>
+							<br></br>
+							<h4> David Tawil </h4>
+							<br></br>
+							<br></br> */}
 						</p>{" "}
 					</div>
 				</Grid>
 
-				{/* <Grid className={classes.avatarBox} item xs={12} lg={6}>
+				<Grid className={classes.avatarBox} item xs={12} lg={6}>
 					{" "}
-					<h2>Our Team</h2>
-				</Grid> */}
+					<Avatar className={classes.image} src={Image} alt="Alex" />
+				</Grid>
 			</Grid>
 			<br></br>
 			<br></br>
