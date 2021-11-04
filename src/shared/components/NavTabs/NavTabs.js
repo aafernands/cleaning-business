@@ -125,13 +125,9 @@ function NavTabs({ onToggle }) {
 						</IconButton>
 					</Toolbar>
 					<div className={classes.desktopBtn}>
-						{/* <Button variant="containedPrimary" component={Link} to="/">
+						<Button variant="containedPrimary" component={Link} to="/">
 							HOME
 						</Button>
-						<Button variant="containedPrimary" component={Link} to="intro">
-							INTRO
-						</Button>
-
 						<Button variant="containedPrimary" component={Link} to="/about">
 							ABOUT
 						</Button>
@@ -146,7 +142,7 @@ function NavTabs({ onToggle }) {
 
 						<Button variant="containedPrimary" component={Link} to="/services">
 							SERVICES
-						</Button> */}
+						</Button>
 					</div>
 				</AppBar>
 			</div>
@@ -162,20 +158,13 @@ function NavTabs({ onToggle }) {
 					onClick={toggleDrawer(false)}
 					onKeyDown={toggleDrawer(false)}
 				>
-					{/* <MenuList>
+					<MenuList>
 						<List className={classes.linkColor}>
 							<ListItem button component={Link} to="/">
 								<ListItemIcon>
 									<HomeIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"HOME"} />
-							</ListItem>
-							<br></br>
-							<ListItem button component={Link} to="intro">
-								<ListItemIcon>
-									<HomeIcon className={classes.iconStyle} />
-								</ListItemIcon>
-								<ListItemText primary={"INTRO"} />
 							</ListItem>
 							<br></br>
 							<ListItem button component={Link} to="/about">
@@ -210,7 +199,7 @@ function NavTabs({ onToggle }) {
 						>
 							CONTACT US
 						</Button>
-					</MenuList> */}
+					</MenuList>
 				</div>
 				<div className={classes.socialIcons}>
 					<a class="icons" href="https://www.facebook.com/">

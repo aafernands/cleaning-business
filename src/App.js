@@ -29,14 +29,13 @@ function App() {
 		<HashRouter>
 			<Container className={classes.test}>
 				<NavTabs />
-				<Route exact path="/home" component={Home} />
+				<Route exact path="/" component={Home} />
 				<Route exact path="/about" component={About} />
 				<Route exact path="/contact" component={Contact} />
 				<Route path="/services" component={Services} />
 				<Route path="/footer" component={Footer} />
 				<Route path="/submitted" component={Submitted} />
 				<Route path="/faqs" component={Faqs} />
-				<Route path="/" component={Intro} />
 				<Footer />
 			</Container>
 		</HashRouter>

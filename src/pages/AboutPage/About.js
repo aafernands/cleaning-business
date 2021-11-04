@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
 		paddingRight: 20,
 	},
 	avatar: {
-		width: theme.spacing(50),
-		height: theme.spacing(50),
+		width: theme.spacing(40),
+		height: theme.spacing(40),
 		margin: theme.spacing(1),
 	},
 	avatarBox: {
@@ -41,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "justify",
 		boxShadow: "0 0 5px #0000005e",
 		color: "rgb(0, 0, 0)",
+		textAlign: "justify",
+		justifyContent: "center",
+		display: "flex",
 	},
 }));
 
@@ -65,31 +68,37 @@ export default function BasicTable() {
 					<div className={classes.contactBox}>
 						<p className="aboutUs">
 							{" "}
-							Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum
-							dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit
-							amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-							ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
-							sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-							ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor
-							sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet,
-							consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur
-							adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing
-							elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem
-							ipsum dolor sit amet, consectetur adipiscing elit{" "}
+							<h2>Our Company</h2>
+							<br></br>
+							New Shine Pro is a company that provides ultimate cleaning
+							solutions. We serve in Central New Jersey area. Our vision is to
+							offer a high quality service and create clean environments with
+							the highest sanitary standards, as well as to establish memorable
+							relationships with our clients.
+							<br></br>
+							<br></br>
+							From your home to your office at New Shine Pro we offer an
+							exclusive range of cleaning services.
+							<br></br>
+							<br></br>
+							We are characterized by teamwork and trained professionals. This
+							allows us to provide the best possible service and meet all the
+							needs of our customers.
+							<h4>**We are fuly insured</h4>
+							<br></br>
+							<br></br>
+							<h2>Our Team</h2>
+							<br></br>
+							<br></br>
+							<Avatar className={classes.avatar} src={Logo} alt="Alex" />
 						</p>{" "}
 					</div>
 				</Grid>
 
-				<Grid className={classes.avatarBox} item xs={12} lg={6}>
+				{/* <Grid className={classes.avatarBox} item xs={12} lg={6}>
 					{" "}
-					<Avatar className={classes.avatar} src={Logo} alt="Alex" />
-				</Grid>
+					<h2>Our Team</h2>
+				</Grid> */}
 			</Grid>
 			<br></br>
 			<br></br>
