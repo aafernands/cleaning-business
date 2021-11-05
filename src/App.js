@@ -10,7 +10,6 @@ import Contact from "./pages/ContactPage/Contact.js";
 import Services from "./pages/ServicesPage/Services.js";
 import Submitted from "./pages/ContactPage/SubmittedPage/Submitted.js";
 import Faqs from "./pages/FaqsPage/Faqs.js";
-import Intro from "./pages/IntroPage.js";
 
 import "./shared/style/global.css";
 import Container from "@material-ui/core/Container";
