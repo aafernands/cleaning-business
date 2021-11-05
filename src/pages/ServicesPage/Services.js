@@ -95,10 +95,7 @@ export default function Services() {
 										Dry disinfection
 									</Typography>
 									<Typography variant="body2" color="text.secondary">
-										30 minutes and up Eliminate dust, mites (and their
-										excrement), viruses, bacteria, dead skin and fungal spores
-										through specialized equipment that uses industrial power
-										pulsating vacuum equipped with HEPA filters and 11 times
+										Eliminate dust, bed bugs (and their excrement), viruses, bacteria, dead skin and fungal spores through specialized equipment that uses industrial power pulsating vacuum equipped with HEPA filters and 11 times
 										more powerful than a household vacuum cleaner. Our medical
 										grade germicidal filter-free UV light technology deactivates
 										the DNA of microorganisms including mites, bed bugs,
@@ -133,10 +130,9 @@ export default function Services() {
 									</Typography>
 									<Typography variant="body2" color="text.secondary">
 										We leave your car like new, show off the interiors of your
-										car! with our #Interior Wash packages for your vehicle! All
-										without leaving your place of work or home! 😉 Quote any
-										commitment from our package. We have two packages for your
-										car: 👌Basic Package: Disinfection and Clothes Washing.
+										car! with our Interior Wash packages for your vehicle! All
+										without leaving your place of work or home! We also offer the Exterior cleaning for a perfect shine we use the best in quality products for a new shine look for your car! We have two packages for your
+										car: Basic Package: Disinfection and Seats Washing.
 										⚡PREMIUM Package: Disinfection, laundry, headliner, carpet,
 										dashboard, belts, trim and trunk. Duration Varies Price
 										varies
