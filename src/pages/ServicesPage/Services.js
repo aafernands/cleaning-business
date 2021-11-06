@@ -28,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "justify",
 		color: "rgb(0, 0, 0)",
 	},
+	textServices: {
+				fontFamily: "Raleway",
+
+	}
 }));
 
 export default function Services() {
@@ -94,7 +98,7 @@ export default function Services() {
 									<Typography gutterBottom variant="h5" component="div">
 										Dry disinfection
 									</Typography>
-									<Typography variant="body2" color="text.secondary">
+									<p className="aboutUs" variant="body2" color="text.secondary">
 										Eliminate dust, bed bugs (and their excrement), viruses, bacteria, dead skin and fungal spores through specialized equipment that uses industrial power pulsating vacuum equipped with HEPA filters and 11 times
 										more powerful than a household vacuum cleaner. Our medical
 										grade germicidal filter-free UV light technology deactivates
@@ -102,7 +106,7 @@ export default function Services() {
 										bacteria, mold and other pathogens, to prevent their
 										proliferation and leave your mattresses, carpets and
 										furniture protected with our acaricide for up to 6 months
-									</Typography>
+									</p>
 								</CardContent>
 							</CardActionArea>
 						</Card>
