@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.aaaaa3b8.chunk.css",
-    "main.js": "/static/js/main.309f3d29.chunk.js",
-    "main.js.map": "/static/js/main.309f3d29.chunk.js.map",
+    "main.js": "/static/js/main.10c79e66.chunk.js",
+    "main.js.map": "/static/js/main.10c79e66.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f67c4291.js",
     "runtime-main.js.map": "/static/js/runtime-main.f67c4291.js.map",
     "static/js/2.858e91f2.chunk.js": "/static/js/2.858e91f2.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/couch.5eeddd21.jpeg": "/static/media/couch.5eeddd21.jpeg",
     "static/media/image.1facc249.png": "/static/media/image.1facc249.png",
     "static/media/logo.58bc83cf.png": "/static/media/logo.58bc83cf.png",
-    "static/media/logoWhite.b2e03d2d.png": "/static/media/logoWhite.b2e03d2d.png",
+    "static/media/logoWhite.da10c187.png": "/static/media/logoWhite.da10c187.png",
     "static/media/towel.2a5daca5.jpg": "/static/media/towel.2a5daca5.jpg",
     "static/media/truck.338893bf.jpeg": "/static/media/truck.338893bf.jpeg",
     "static/media/upholstery.4078f0ee.jpeg": "/static/media/upholstery.4078f0ee.jpeg"
@@ -29,6 +29,6 @@
     "static/js/runtime-main.f67c4291.js",
     "static/js/2.858e91f2.chunk.js",
     "static/css/main.aaaaa3b8.chunk.css",
-    "static/js/main.309f3d29.chunk.js"
+    "static/js/main.10c79e66.chunk.js"
   ]
 }
