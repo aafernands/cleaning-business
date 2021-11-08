@@ -1,22 +1,22 @@
 import React from "react";
 import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Footer() {
 	return (
 		<footer class="footerInfo">
 			<h5>GET IN TOUCH</h5>
 
-			<a class="icons" href="https://www.facebook.com/newshinepro/">
-				<FontAwesomeIcon icon={faFacebook} color="white" size="1x" />
+			<a id="icons" href="https://www.facebook.com/">
+				<FacebookIcon color="action" />
 			</a>
-			<a class="icons" href="https://www.instagram.com/newshinepro">
-				<FontAwesomeIcon icon={faInstagram} color="white" size="1x" />
+			<a id="icons" href="https://www.instagram.com/newshinepro/">
+				<InstagramIcon color="action" />
 			</a>
-			<a class="icons" href="mailto:newshinepro@gmail.com">
-				<FontAwesomeIcon icon={faEnvelope} color="white" size="1x" />
+			<a id="icons" href="mailto:newshinepro@gmail.com">
+				<MailOutlineIcon color="action" />
 			</a>
 
 			<p>

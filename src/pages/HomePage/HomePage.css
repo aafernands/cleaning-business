@@ -74,8 +74,6 @@ h1 {
 	font-family: "Raleway", sans-serif;
 }
 
-
-
 .iconStyleCalendar {
 	height: 120px;
 	width: 120px;
@@ -95,4 +93,8 @@ h1 {
 	height: 600px;
 	width: 850px;
 	align-items: center;
+}
+
+.homeBox {
+	margin-top: 15px;
 }

@@ -14,15 +14,16 @@ import done from "./done.jpeg";
 function SwipeableTextMobileStepper() {
 	return (
 		<Container>
-			<Grid container spacing={2}>
-				<Grid item xs={12} md={8} lg={8}>
-					<Carousel />
+			<div className="homeBox">
+				<Grid container spacing={2}>
+					<Grid item xs={12} md={8} lg={8}>
+						<Carousel />
+					</Grid>
+					<Grid item xs={12} md={4} lg={4}>
+						<ListHomePage />
+					</Grid>
 				</Grid>
-				<Grid item xs={12} md={4} lg={4}>
-					
-					<ListHomePage />
-				</Grid>
-			</Grid>
+			</div>
 			<div class="howItWorksContainer">
 				<Container>
 					<br></br> <Divider variant="middle" />
@@ -34,7 +35,10 @@ function SwipeableTextMobileStepper() {
 						<br></br>
 						<img className="iconStyleCalendar" src={calendar} alt="Calendar" />
 						<h4>SCHEDULE AN APPOINTMENT</h4>
-						<Button href="https://www.appointfix.com/New-Shine-Pro" variant="outlined">
+						<Button
+							href="https://www.appointfix.com/New-Shine-Pro"
+							variant="outlined"
+						>
 							BOOK ONLINE
 						</Button>
 						<br></br>

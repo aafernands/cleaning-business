@@ -101,10 +101,9 @@ function NavTabs({ onToggle }) {
 		<div>
 			<div className={classes.topLine}>New Shine Pro</div>
 			<div className={classes.root}>
-
 				<AppBar position="static">
 					<Toolbar>
-					<IconButton
+						<IconButton
 							onClick={toggleDrawer(true)}
 							edge="start"
 							className={classes.menuButton}
@@ -225,13 +224,15 @@ function NavTabs({ onToggle }) {
 					<a class="icons" href="https://www.facebook.com/">
 						<FacebookIcon color="action" />
 					</a>
-					<a class="icons" href="https://www.facebook.com/">
+					<a class="icons" href="https://www.instagram.com/newshinepro">
 						<InstagramIcon color="action" />
 					</a>
-					<a class="icons" href="https://www.facebook.com/">
+					<a class="icons" href="mailto:newshinepro@gmail.com">
 						<MailOutlineIcon color="action" />
 					</a>
 				</div>
+
+				
 			</Drawer>
 		</div>
 	);

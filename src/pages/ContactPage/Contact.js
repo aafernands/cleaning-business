@@ -266,9 +266,9 @@ export default function Contact() {
 
 						<h4>+1 9738363080</h4>
 
-						<p component={Link} to="mailto:newshinepro@gmail.com">
+						<h4 component={Link} to="mailto:newshinepro@gmail.com">
 							newshinepro@gmail.com"
-						</p>
+						</h4>
 
 						<br></br>
 						<br></br>
