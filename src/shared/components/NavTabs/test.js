@@ -21,7 +21,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
 import logo from "./logoWhite.png";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
@@ -101,10 +100,10 @@ function NavTabs({ onToggle }) {
 		<div>
 			<div className={classes.topLine}>New Shine Pro</div>
 			<div className={classes.root}>
-
+                
 				<AppBar position="static">
 					<Toolbar>
-					<IconButton
+						<IconButton
 							onClick={toggleDrawer(true)}
 							edge="start"
 							className={classes.menuButton}
@@ -116,15 +115,6 @@ function NavTabs({ onToggle }) {
 						<a className="anchorCenter" href="/">
 							<img className="logo" src={logo} alt="Logo" />
 						</a>
-
-						<IconButton
-							onClick={toggleDrawer(true)}
-							edge="start"
-							className={classes.menuButton}
-							color="inherit"
-							aria-label="menu"
-						></IconButton>
-
 						<IconButton
 							href="tel:+9738363080"
 							edge="start"
@@ -132,38 +122,29 @@ function NavTabs({ onToggle }) {
 							color="inherit"
 							aria-label="menu"
 						>
-							<div className={classes.desktopBtn}>
-								<Button variant="containedPrimary" component={Link} to="/">
-									HOME
-								</Button>
-								<Button variant="containedPrimary" component={Link} to="/about">
-									ABOUT
-								</Button>
-
-								<Button
-									variant="containedPrimary"
-									component={Link}
-									to="/contact"
-								>
-									CONTACT
-								</Button>
-
-								<Button variant="containedPrimary" component={Link} to="/faqs">
-									FAQS
-								</Button>
-
-								<Button
-									variant="containedPrimary"
-									component={Link}
-									to="/services"
-								>
-									SERVICES
-								</Button>
-							</div>
-
 							<PhoneIphoneIcon fontSize="large" />
 						</IconButton>
 					</Toolbar>
+					<div className={classes.desktopBtn}>
+						<Button variant="containedPrimary" component={Link} to="/">
+							HOME
+						</Button>
+						<Button variant="containedPrimary" component={Link} to="/about">
+							ABOUT
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/contact">
+							CONTACT
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/faqs">
+							FAQS
+						</Button>
+
+						<Button variant="containedPrimary" component={Link} to="/services">
+							SERVICES
+						</Button>
+					</div>
 				</AppBar>
 			</div>
 

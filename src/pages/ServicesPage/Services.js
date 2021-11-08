@@ -29,9 +29,8 @@ const useStyles = makeStyles((theme) => ({
 		color: "rgb(0, 0, 0)",
 	},
 	textServices: {
-				fontFamily: "Raleway",
-
-	}
+		fontFamily: "Raleway",
+	},
 }));
 
 export default function Services() {
@@ -57,12 +56,12 @@ export default function Services() {
 			</div>
 			<Grid>
 				<div className={classes.text}>
-					<p className="aboutUs">
+					<h4 className="aboutUs">
 						{" "}
 						New Shine Pro Cleaning Services LLC is fully insured and provices
 						detailed cleaning services to residential and comercial properties
 						in Central Jersey area.
-					</p>
+					</h4>
 				</div>
 			</Grid>
 			<br></br>
@@ -99,13 +98,16 @@ export default function Services() {
 										Dry disinfection
 									</Typography>
 									<p className="aboutUs" variant="body2" color="text.secondary">
-										Eliminate dust, bed bugs (and their excrement), viruses, bacteria, dead skin and fungal spores through specialized equipment that uses industrial power pulsating vacuum equipped with HEPA filters and 11 times
-										more powerful than a household vacuum cleaner. Our medical
-										grade germicidal filter-free UV light technology deactivates
-										the DNA of microorganisms including mites, bed bugs,
-										bacteria, mold and other pathogens, to prevent their
-										proliferation and leave your mattresses, carpets and
-										furniture protected with our acaricide for up to 6 months
+										Eliminate dust, bed bugs (and their excrement), viruses,
+										bacteria, dead skin and fungal spores through specialized
+										equipment that uses industrial power pulsating vacuum
+										equipped with HEPA filters and 11 times more powerful than a
+										household vacuum cleaner. Our medical grade germicidal
+										filter-free UV light technology deactivates the DNA of
+										microorganisms including mites, bed bugs, bacteria, mold and
+										other pathogens, to prevent their proliferation and leave
+										your mattresses, carpets and furniture protected with our
+										acaricide for up to 6 months
 									</p>
 								</CardContent>
 							</CardActionArea>
@@ -132,15 +134,17 @@ export default function Services() {
 									<Typography gutterBottom variant="h5" component="div">
 										Vehicle Dry Washing
 									</Typography>
-									<Typography variant="body2" color="text.secondary">
+									<p className="aboutUs" variant="body2" color="text.secondary">
 										We leave your car like new, show off the interiors of your
 										car! with our Interior Wash packages for your vehicle! All
-										without leaving your place of work or home! We also offer the Exterior cleaning for a perfect shine we use the best in quality products for a new shine look for your car! We have two packages for your
-										car: Basic Package: Disinfection and Seats Washing.
-										⚡PREMIUM Package: Disinfection, laundry, headliner, carpet,
-										dashboard, belts, trim and trunk. Duration Varies Price
-										varies
-									</Typography>
+										without leaving your place of work or home! We also offer
+										the Exterior cleaning for a perfect shine we use the best in
+										quality products for a new shine look for your car! We have
+										two packages for your car: Basic Package: Disinfection and
+										Seats Washing. ⚡PREMIUM Package: Disinfection, laundry,
+										headliner, carpet, dashboard, belts, trim and trunk.
+										Duration Varies Price varies
+									</p>
 								</CardContent>
 							</CardActionArea>
 						</Card>
@@ -167,7 +171,7 @@ export default function Services() {
 									<Typography gutterBottom variant="h5" component="div">
 										Deep washing service
 									</Typography>
-									<Typography variant="body2" color="text.secondary">
+									<p className="aboutUs" variant="body2" color="text.secondary">
 										Always accompanied by our dry disinfection process, it is
 										ideal for removing difficult stains, bad smells and fungi
 										present in your mattresses, carpets or furniture, recovering
@@ -176,7 +180,7 @@ export default function Services() {
 										state-of-the-art injection and suction. We guarantee the
 										quality of our services by leaving your mattresses, carpets
 										and furniture completely dry and ready to use.
-									</Typography>
+										</p>
 								</CardContent>
 							</CardActionArea>
 						</Card>
