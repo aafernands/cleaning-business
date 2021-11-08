@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.aaaaa3b8.chunk.css",
-    "main.js": "/static/js/main.10c79e66.chunk.js",
-    "main.js.map": "/static/js/main.10c79e66.chunk.js.map",
+    "main.css": "/static/css/main.ecd89bb7.chunk.css",
+    "main.js": "/static/js/main.3322ca55.chunk.js",
+    "main.js.map": "/static/js/main.3322ca55.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f67c4291.js",
     "runtime-main.js.map": "/static/js/runtime-main.f67c4291.js.map",
-    "static/js/2.858e91f2.chunk.js": "/static/js/2.858e91f2.chunk.js",
-    "static/js/2.858e91f2.chunk.js.map": "/static/js/2.858e91f2.chunk.js.map",
+    "static/js/2.7b6e136a.chunk.js": "/static/js/2.7b6e136a.chunk.js",
+    "static/js/2.7b6e136a.chunk.js.map": "/static/js/2.7b6e136a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.aaaaa3b8.chunk.css.map": "/static/css/main.aaaaa3b8.chunk.css.map",
-    "static/js/2.858e91f2.chunk.js.LICENSE.txt": "/static/js/2.858e91f2.chunk.js.LICENSE.txt",
+    "static/css/main.ecd89bb7.chunk.css.map": "/static/css/main.ecd89bb7.chunk.css.map",
+    "static/js/2.7b6e136a.chunk.js.LICENSE.txt": "/static/js/2.7b6e136a.chunk.js.LICENSE.txt",
     "static/media/alex.526c5be7.png": "/static/media/alex.526c5be7.png",
     "static/media/calendar.5633fe8d.jpeg": "/static/media/calendar.5633fe8d.jpeg",
     "static/media/carWash.6c6d95f8.jpeg": "/static/media/carWash.6c6d95f8.jpeg",
@@ -19,16 +19,16 @@
     "static/media/clean4.705f6b1c.jpeg": "/static/media/clean4.705f6b1c.jpeg",
     "static/media/couch.5eeddd21.jpeg": "/static/media/couch.5eeddd21.jpeg",
     "static/media/image.1facc249.png": "/static/media/image.1facc249.png",
-    "static/media/logo.58bc83cf.png": "/static/media/logo.58bc83cf.png",
-    "static/media/logoWhite.da10c187.png": "/static/media/logoWhite.da10c187.png",
+    "static/media/logo.996fcd8f.png": "/static/media/logo.996fcd8f.png",
+    "static/media/logoWhite.dbe7664f.png": "/static/media/logoWhite.dbe7664f.png",
     "static/media/towel.2a5daca5.jpg": "/static/media/towel.2a5daca5.jpg",
     "static/media/truck.338893bf.jpeg": "/static/media/truck.338893bf.jpeg",
     "static/media/upholstery.4078f0ee.jpeg": "/static/media/upholstery.4078f0ee.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.f67c4291.js",
-    "static/js/2.858e91f2.chunk.js",
-    "static/css/main.aaaaa3b8.chunk.css",
-    "static/js/main.10c79e66.chunk.js"
+    "static/js/2.7b6e136a.chunk.js",
+    "static/css/main.ecd89bb7.chunk.css",
+    "static/js/main.3322ca55.chunk.js"
   ]
 }
