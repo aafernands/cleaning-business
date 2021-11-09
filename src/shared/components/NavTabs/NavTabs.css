@@ -138,7 +138,6 @@ MuiIconButton-edgeStart {
 	/* display: block !important; */
 	margin-left: auto !important;
 	margin-right: auto !important;
-	/* padding-right: 10px !important; */
 }
 
 @media screen and (max-width: 600px) {
@@ -148,6 +147,7 @@ MuiIconButton-edgeStart {
 		margin-right: auto !important;
 		height: 86.8px !important;
 		width: 140.5px !important;
+		padding-left: 20px;
 	}
 }
 
