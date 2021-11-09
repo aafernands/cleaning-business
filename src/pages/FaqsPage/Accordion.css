@@ -1,5 +1,10 @@
 .questionsTitle {
 	font-weight: bold !important;
 	text-align: left !important;
-	max-width: 80% !important;;
+	max-width: 85% !important;
+}
+
+.ansewrs {
+	text-align: justify !important;
+	max-width: 90% !important;
 }

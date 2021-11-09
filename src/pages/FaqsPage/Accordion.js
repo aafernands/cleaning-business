@@ -37,7 +37,7 @@ export default function ControlledAccordions() {
 					<Typography sx={{ color: "text.secondary" }}></Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography>
+					<Typography className="ansewrs">
 						There's a couple of fators that will determin the cost of the
 						service such as: tasks you want done, type of stains on surfaces,
 						pets, etc. Contact us and will can set up a meeting at your home ot
@@ -68,7 +68,7 @@ export default function ControlledAccordions() {
 					<Typography sx={{ color: "text.secondary" }}></Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography>
+					<Typography className="ansewrs">
 						We ask our costumers a power outlet to connect our cleaning machines
 						and a source of water could be from kitchen sink or bathroom.
 					</Typography>
@@ -95,7 +95,7 @@ export default function ControlledAccordions() {
 					<Typography sx={{ color: "text.secondary" }}></Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography>
+					<Typography className="ansewrs">
 						Currently we offer the following services: carpet, mattress, chairs,
 						airmchairs, sofa and couch cleaning. We also perform dry car wash
 						and interior car detailing.
@@ -122,7 +122,7 @@ export default function ControlledAccordions() {
 					</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography>
+					<Typography className="ansewrs">
 						In case of cancellation, notify within 24hrs before the scheduled
 						time. Otherwise a $40 fee will be charged.
 					</Typography>
@@ -148,7 +148,7 @@ export default function ControlledAccordions() {
 					</Typography>
 				</AccordionSummary>
 				<AccordionDetails>
-					<Typography>
+					<Typography className="ansewrs">
 						We are currently accepting cash, venmo or cash. Payment is due at
 						the time of service.
 					</Typography>
