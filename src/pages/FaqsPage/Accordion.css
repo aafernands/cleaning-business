@@ -1,3 +1,6 @@
-.testttt {
-	padding-left: 20px;
+.questionsTitle {
+	font-weight: bold !important;
+	text-align: left !important;
+	padding-right: 100px !important;
+	/* color: red !important; */
 }

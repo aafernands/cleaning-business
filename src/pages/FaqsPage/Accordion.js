@@ -23,12 +23,12 @@ export default function ControlledAccordions() {
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon className="testttt" icon={faAngleDoubleDown} color="black" size="1x" />
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel1bh-content"
 					id="panel1bh-header"
 				>
-					<Typography sx={{ width: "100%", flexShrink: 0 }}>
+					<Typography className="questionsTitle" sx={{ width: "100%", flexShrink: 0 }}>
 						How much does cleaning cost?
 					</Typography>
 					<Typography sx={{ color: "text.secondary" }}></Typography>
