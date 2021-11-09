@@ -151,6 +151,17 @@ MuiIconButton-edgeStart {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	.logo {
+		display: block !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		height: 86.8px !important;
+		width: 140.5px !important;
+		padding-left: 20px;
+	}
+}
+
 .makeStyles-desktopBtn-5 {
 	width: 540px !important;
 	position: relative;
