@@ -146,6 +146,8 @@ MuiIconButton-edgeStart {
 		display: block !important;
 		margin-left: auto !important;
 		margin-right: auto !important;
+		height: 86.8px !important;
+		width: 140.5px !important;
 	}
 }
 
