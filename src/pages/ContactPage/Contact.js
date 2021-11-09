@@ -253,22 +253,20 @@ export default function Contact() {
 						<br></br>
 						<br></br>
 						<br></br>
+						<br></br> <br></br>
 						<br></br>
 						<br></br>
-
 						<h2>
 							NEW SHINE PRO LLC
 							<br></br>
 						</h2>
 						<h4>Cleaning Services</h4>
-						<br></br>
-
-						<h4>+1 8628005190</h4>
-
 						<h4 component={Link} to="mailto:newshinepro@gmail.com">
 							newshinepro@gmail.com"
 						</h4>
-
+						<a href="tel:+1 8628005190">
+							<h4> +1 8628005190</h4>
+						</a>
 						<br></br>
 						<br></br>
 						<br></br>
