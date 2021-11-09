@@ -4,6 +4,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function ControlledAccordions() {
 	const [expanded, setExpanded] = React.useState(false);
@@ -19,7 +22,9 @@ export default function ControlledAccordions() {
 				onChange={handleChange("panel1")}
 			>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
+					expandIcon={
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+					}
 					aria-controls="panel1bh-content"
 					id="panel1bh-header"
 				>
@@ -45,7 +50,9 @@ export default function ControlledAccordions() {
 				onChange={handleChange("panel2")}
 			>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
+					expandIcon={
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+					}
 					aria-controls="panel2bh-content"
 					id="panel2bh-header"
 				>
@@ -67,7 +74,9 @@ export default function ControlledAccordions() {
 				onChange={handleChange("panel3")}
 			>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
+					expandIcon={
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+					}
 					aria-controls="panel3bh-content"
 					id="panel3bh-header"
 				>
@@ -86,12 +95,15 @@ export default function ControlledAccordions() {
 			</Accordion>
 
 			<Accordion
-				expanded={expanded === "panel4"}
+				expandIcon={
+					<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+				}
 				onChange={handleChange("panel4")}
 			>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
-					aria-controls="panel4bh-content"
+expandIcon={
+	<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+}					aria-controls="panel4bh-content"
 					id="panel4bh-header"
 				>
 					<Typography sx={{ width: "100%", flexShrink: 0 }}>
@@ -111,7 +123,9 @@ export default function ControlledAccordions() {
 				onChange={handleChange("panel5")}
 			>
 				<AccordionSummary
-					expandIcon={<ExpandMoreIcon />}
+					expandIcon={
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+					}
 					aria-controls="panel5bh-content"
 					id="panel5bh-header"
 				>
