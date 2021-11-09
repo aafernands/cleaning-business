@@ -5,7 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import "./Accordion.css";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function ControlledAccordions() {
@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
+						<FontAwesomeIcon className="testttt" icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel1bh-content"
 					id="panel1bh-header"
