@@ -116,7 +116,7 @@ function NavTabs({ onToggle }) {
 							<img className="logo" src={logo} alt="Logo" />
 						</a>
 						<IconButton
-							href="tel:+9738363080"
+							href="tel:+8628005190"
 							edge="start"
 							className="menuButtonCall"
 							color="inherit"

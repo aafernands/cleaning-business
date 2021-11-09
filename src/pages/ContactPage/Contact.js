@@ -11,7 +11,6 @@ import Grid from "@mui/material/Grid";
 import ReCAPTCHA from "react-google-recaptcha";
 import Divider from "@mui/material/Divider";
 import logo from "./logo.png";
-import "./Contact.css";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -264,7 +263,7 @@ export default function Contact() {
 						<h4>Cleaning Services</h4>
 						<br></br>
 
-						<h4>+1 9738363080</h4>
+						<h4>+1 8628005190</h4>
 
 						<h4 component={Link} to="mailto:newshinepro@gmail.com">
 							newshinepro@gmail.com"

@@ -112,6 +112,7 @@ function NavTabs({ onToggle }) {
 						>
 							<MenuIcon />
 						</IconButton>
+
 						<a className="anchorCenter" href="/">
 							<img className="logo" src={logo} alt="Logo" />
 						</a>
@@ -125,7 +126,7 @@ function NavTabs({ onToggle }) {
 						></IconButton>
 
 						<IconButton
-							href="tel:+9738363080"
+							href="tel:+8628005190"
 							edge="start"
 							className="menuButtonCall"
 							color="inherit"
@@ -231,8 +232,6 @@ function NavTabs({ onToggle }) {
 						<MailOutlineIcon color="action" />
 					</a>
 				</div>
-
-				
 			</Drawer>
 		</div>
 	);
