@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel1bh-content"
 					id="panel1bh-header"
@@ -51,7 +51,7 @@ export default function ControlledAccordions() {
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel2bh-content"
 					id="panel2bh-header"
@@ -75,7 +75,7 @@ export default function ControlledAccordions() {
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel3bh-content"
 					id="panel3bh-header"
@@ -95,15 +95,14 @@ export default function ControlledAccordions() {
 			</Accordion>
 
 			<Accordion
-				expandIcon={
-					<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
-				}
+				expanded={expanded === "panel4"}
 				onChange={handleChange("panel4")}
 			>
 				<AccordionSummary
-expandIcon={
-	<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
-}					aria-controls="panel4bh-content"
+					expandIcon={
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
+					}
+					aria-controls="panel4bh-content"
 					id="panel4bh-header"
 				>
 					<Typography sx={{ width: "100%", flexShrink: 0 }}>
@@ -124,7 +123,7 @@ expandIcon={
 			>
 				<AccordionSummary
 					expandIcon={
-						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="2x" />
+						<FontAwesomeIcon icon={faAngleDoubleDown} color="black" size="1x" />
 					}
 					aria-controls="panel5bh-content"
 					id="panel5bh-header"
