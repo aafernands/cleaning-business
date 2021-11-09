@@ -126,7 +126,7 @@ function NavTabs({ onToggle }) {
 						></IconButton>
 
 						<IconButton
-							href="tel:+8628005190"
+							href="tel:+1 8628005190"
 							edge="start"
 							className="menuButtonCall"
 							color="inherit"
