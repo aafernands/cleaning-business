@@ -7,16 +7,15 @@ export default function ListHomePage() {
 		<div class="bloc2k">
 			<br></br>
 			<br></br>
-
 			<h2> CLEANING SERVICES</h2>
 			<br></br>
 			<br></br> <Divider variant="middle" />
 			<div class="contactInfo">
-				<h3>Couch</h3>
-				<h3>Chair</h3>
-				<h3>Vehicle</h3>
-				<h3>Mattress</h3>
-				<h3>Armchair</h3>
+				<h3>Sofa Cleaning</h3>
+				<h3>Mattress Cleaning</h3>
+				<h3>Upholstery Cleaning</h3>
+				<h3>Carpet Cleaning</h3>
+				<h3>Mobile Car Wash</h3>
 				<br></br>
 				<br></br>
 			</div>
