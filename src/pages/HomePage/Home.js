@@ -35,10 +35,7 @@ function SwipeableTextMobileStepper() {
 						<br></br>
 						<img className="iconStyleCalendar" src={calendar} alt="Calendar" />
 						<h4>SCHEDULE AN APPOINTMENT</h4>
-						<Button
-							href="https://www.appointfix.com/New-Shine-Pro"
-							variant="outlined"
-						>
+						<Button href="https://newshinepro.square.site" variant="outlined">
 							BOOK ONLINE
 						</Button>
 						<br></br>
