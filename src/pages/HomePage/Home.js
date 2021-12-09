@@ -35,7 +35,10 @@ function SwipeableTextMobileStepper() {
 						<br></br>
 						<img className="iconStyleCalendar" src={calendar} alt="Calendar" />
 						<h4>SCHEDULE AN APPOINTMENT</h4>
-						<Button href="https://newshinepro.square.site" variant="outlined">
+						<Button
+							href="https://squareup.com/appointments/book/8sbhitchkbxxoc/9X56AMMFQFXS6/start"
+							variant="outlined"
+						>
 							BOOK ONLINE
 						</Button>
 						<br></br>
