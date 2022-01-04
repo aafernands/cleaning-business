@@ -14,13 +14,18 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import WorkIcon from "@material-ui/icons/Work";
 import PersonIcon from "@material-ui/icons/Person";
+import QuizIcon from "@mui/icons-material/Quiz";
+
 import HomeIcon from "@material-ui/icons/Home";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import "./NavTabs.css";
+import DrawerServices from "./DrawerServices.js";
 import logo from "./logoWhite.png";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -97,6 +102,15 @@ function NavTabs({ onToggle }) {
 		setIsOpen(open);
 	};
 
+	const [anchorEl, setAnchorEl] = React.useState(null);
+	const open = Boolean(anchorEl);
+	const handleClick = (event) => {
+		setAnchorEl(event.currentTarget);
+	};
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
 	return (
 		<div>
 			<div className={classes.topLine}>New Shine Pro</div>
@@ -125,6 +139,71 @@ function NavTabs({ onToggle }) {
 							aria-label="menu"
 						></IconButton>
 
+						<div className={classes.desktopBtn}>
+							<Button variant="containedPrimary" component={Link} to="/">
+								HOME
+							</Button>
+							<Button variant="containedPrimary" component={Link} to="/about">
+								ABOUT
+							</Button>
+
+							<Button variant="containedPrimary" component={Link} to="/contact">
+								CONTACT
+							</Button>
+
+							<Button variant="containedPrimary" component={Link} to="/faqs">
+								FAQS
+							</Button>
+
+							{/* <Button
+									variant="containedPrimary"
+									component={Link}
+									to="/services"
+								>
+									SERVICES
+								</Button> */}
+
+							<Button
+								id="basic-button"
+								aria-controls={open ? "basic-menu" : undefined}
+								aria-haspopup="true"
+								aria-expanded={open ? "true" : undefined}
+								onClick={handleClick}
+							>
+								SERVICES
+							</Button>
+							<Menu
+								id="basic-menu"
+								anchorEl={anchorEl}
+								open={open}
+								onClose={handleClose}
+								MenuListProps={{
+									"aria-labelledby": "basic-button",
+								}}
+							>
+								<MenuItem
+									component={Link}
+									to="/CarpetCleaningPage"
+									// onClick={handleClose}
+								>
+									Carpet Cleaning
+								</MenuItem>
+								<MenuItem
+									component={Link}
+									to="/UphosteryCleaningPage"
+									// onClick={handleClose}
+								>
+									Upholstry Cleaning
+								</MenuItem>
+								<MenuItem
+									component={Link}
+									to="/MobileCarWashPage"
+									// onClick={handleClose}
+								>
+									Mobile Car Wash
+								</MenuItem>
+							</Menu>
+						</div>
 						<IconButton
 							href="tel:+1 8628005190"
 							edge="start"
@@ -132,37 +211,10 @@ function NavTabs({ onToggle }) {
 							color="inherit"
 							aria-label="menu"
 						>
-							<div className={classes.desktopBtn}>
-								<Button variant="containedPrimary" component={Link} to="/">
-									HOME
-								</Button>
-								<Button variant="containedPrimary" component={Link} to="/about">
-									ABOUT
-								</Button>
-
-								<Button
-									variant="containedPrimary"
-									component={Link}
-									to="/contact"
-								>
-									CONTACT
-								</Button>
-
-								<Button variant="containedPrimary" component={Link} to="/faqs">
-									FAQS
-								</Button>
-
-								<Button
-									variant="containedPrimary"
-									component={Link}
-									to="/services"
-								>
-									SERVICES
-								</Button>
-							</div>
-
 							<PhoneIphoneIcon fontSize="large" />
 						</IconButton>
+
+						<div></div>
 					</Toolbar>
 				</AppBar>
 			</div>
@@ -196,18 +248,21 @@ function NavTabs({ onToggle }) {
 							<br></br>
 							<ListItem button component={Link} to="/faqs">
 								<ListItemIcon>
-									<PersonIcon className={classes.iconStyle} />
+									<QuizIcon className="iconStyle" />
 								</ListItemIcon>
 								<ListItemText primary={"FAQS"} />
 							</ListItem>
 							<br></br>
 
-							<ListItem button component={Link} to="/services">
+							<ListItem button>
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"SERVICES"} />
 							</ListItem>
+
+							<DrawerServices />
+
 							<br></br>
 						</List>
 

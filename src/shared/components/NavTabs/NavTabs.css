@@ -171,3 +171,17 @@ MuiIconButton-edgeStart {
 .css-mhc70k-MuiGrid-root > .MuiGrid-item {
 	padding-top: 0px !important;
 }
+
+.iconStyle {
+	color: gray;
+	height: 24px !important;
+	width: 24px !important;
+	fill: currentColor !important;
+	display: inline-block !important;
+	font-size: 1.5rem !important;
+	transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+	flex-shrink: 0 !important;
+	user-select: none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+}

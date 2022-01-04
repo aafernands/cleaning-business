@@ -1,0 +1,48 @@
+img {
+	width: "300px";
+}
+
+.AccordionStyle {
+	color: black;
+	align-items: center;
+}
+
+.contactBox {
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	border-radius: 0rem;
+	font-size: 12px;
+	padding: 20px;
+	background-color: #ffffffbe;
+	box-shadow: 0 0 5px #0000005e;
+	color: white;
+}
+
+.logoBottom {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	width: 10% !important;
+}
+
+@media screen and (max-width: 600px) {
+	.logoBottom {
+		display: block !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		width: 10% !important;
+		/* transform: -50%; */
+	}
+}
+
+.css-h93ljk-MuiTypography-root {
+	margin: 0;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.334;
+	letter-spacing: 0em;
+	margin-bottom: 0.35em;
+text-align: center;
+}

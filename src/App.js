@@ -7,7 +7,9 @@ import Footer from "./shared/components/Footer/Footer";
 import Home from "./pages/HomePage/Home";
 import About from "./pages/AboutPage/About";
 import Contact from "./pages/ContactPage/Contact.js";
-import Services from "./pages/ServicesPage/Services.js";
+import CarpetCleaning from "./pages/CarpetCleaningPage/CarpetCleaning.js";
+import MobileCarWash from "./pages/MobileCarWashPage/MobileCarWash.js";
+import UphosteryCleaning from "./pages/UphosteryCleaningPage/UphosteryCleaning.js";
 import Submitted from "./pages/ContactPage/SubmittedPage/Submitted.js";
 import Faqs from "./pages/FaqsPage/Faqs.js";
 
@@ -31,7 +33,9 @@ function App() {
 				<Route exact path="/" component={Home} />
 				<Route exact path="/about" component={About} />
 				<Route exact path="/contact" component={Contact} />
-				<Route path="/services" component={Services} />
+				<Route path="/CarpetCleaningPage" component={CarpetCleaning} />
+				<Route path="/MobileCarWashPage" component={MobileCarWash} />
+				<Route path="/UphosteryCleaningPage" component={UphosteryCleaning} />
 				<Route path="/footer" component={Footer} />
 				<Route path="/submitted" component={Submitted} />
 				<Route path="/faqs" component={Faqs} />
