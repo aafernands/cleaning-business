@@ -163,7 +163,7 @@ function NavTabs({ onToggle }) {
 									SERVICES
 								</Button> */}
 
-							<Button
+							{/* <Button
 								id="basic-button"
 								aria-controls={open ? "basic-menu" : undefined}
 								aria-haspopup="true"
@@ -171,7 +171,7 @@ function NavTabs({ onToggle }) {
 								onClick={handleClick}
 							>
 								SERVICES
-							</Button>
+							</Button> */}
 							<Menu
 								id="basic-menu"
 								anchorEl={anchorEl}
@@ -254,12 +254,12 @@ function NavTabs({ onToggle }) {
 							</ListItem>
 							<br></br>
 
-							<ListItem button>
+							{/* <ListItem button>
 								<ListItemIcon>
 									<WorkIcon className={classes.iconStyle} />
 								</ListItemIcon>
 								<ListItemText primary={"SERVICES"} />
-							</ListItem>
+							</ListItem> */}
 
 							<DrawerServices />
 
