@@ -96,7 +96,7 @@ export default function Drafts() {
 			aria-labelledby="nested-list-subheader"
 		>
 			<Collapse in={open} timeout="auto" unmountOnExit>
-				<List component="div" disablePadding>
+				{/* <List component="div" disablePadding>
 					<ListItemButton
 						component={Link}
 						to="/UphosteryCleaningPage"
@@ -131,7 +131,7 @@ export default function Drafts() {
 						</ListItemIcon>
 						<ListItemText primary="Mobile Car Wash" />
 					</ListItemButton>
-				</List>
+				</List> */}
 			</Collapse>
 		</List>
 	);
