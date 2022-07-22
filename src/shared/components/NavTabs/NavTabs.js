@@ -89,8 +89,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	topLine: {
-		backgroundColor: "#44AC3B",
-		color: "#44AC3B",
+		backgroundColor: "red",
+		color: "red",
 		fontSize: 4,
 	},
 }));
