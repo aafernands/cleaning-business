@@ -16,12 +16,12 @@ function SwipeableTextMobileStepper() {
 		<Container>
 			<div className="homeBox">
 				<Grid container spacing={0}>
-					<Grid item xs={12} md={8} lg={8}>
+					<Grid item xs={12} md={12} lg={12}>
 						<Carousel />
 					</Grid>
-					<Grid item xs={12} md={4} lg={4}>
+					{/* <Grid item xs={12} md={4} lg={4}>
 						<ListHomePage />
-					</Grid>
+					</Grid> */}
 				</Grid>
 			</div>
 			<div class="howItWorksContainer">
