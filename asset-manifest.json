@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.fd51607c.chunk.css",
-    "main.js": "/static/js/main.285f8c3c.chunk.js",
-    "main.js.map": "/static/js/main.285f8c3c.chunk.js.map",
+    "main.js": "/static/js/main.fc839dda.chunk.js",
+    "main.js.map": "/static/js/main.fc839dda.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f67c4291.js",
     "runtime-main.js.map": "/static/js/runtime-main.f67c4291.js.map",
     "static/js/2.60f03677.chunk.js": "/static/js/2.60f03677.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/carWash.6c6d95f8.jpeg": "/static/media/carWash.6c6d95f8.jpeg",
     "static/media/clean1.00d66080.jpeg": "/static/media/clean1.00d66080.jpeg",
     "static/media/clean2.7e34be23.jpeg": "/static/media/clean2.7e34be23.jpeg",
-    "static/media/clean3.5eeddd21.jpeg": "/static/media/clean3.5eeddd21.jpeg",
+    "static/media/clean3.741352a2.jpeg": "/static/media/clean3.741352a2.jpeg",
     "static/media/clean4.705f6b1c.jpeg": "/static/media/clean4.705f6b1c.jpeg",
     "static/media/couch.5eeddd21.jpeg": "/static/media/couch.5eeddd21.jpeg",
     "static/media/image.1facc249.png": "/static/media/image.1facc249.png",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.f67c4291.js",
     "static/js/2.60f03677.chunk.js",
     "static/css/main.fd51607c.chunk.css",
-    "static/js/main.285f8c3c.chunk.js"
+    "static/js/main.fc839dda.chunk.js"
   ]
 }
