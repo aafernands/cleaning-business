@@ -113,7 +113,7 @@ export default function BasicTable() {
 
 				<Grid className={classes.avatarBox} item xs={12} lg={6}>
 					{" "}
-					<Avatar className={classes.image} src={Image} alt="Alex" />
+					{/* <Avatar className={classes.image} src={Image} alt="Alex" /> */}
 				</Grid>
 			</Grid>
 			<br></br>
