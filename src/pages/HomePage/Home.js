@@ -27,7 +27,7 @@ function SwipeableTextMobileStepper() {
 			<div class="howItWorksContainer">
 				<Container>
 					<br></br> <Divider variant="middle" />
-					<h1>HOW IT WORKS</h1>
+					<h1>HOW IT WORKS !</h1>
 					<div class="block">
 						{" "}
 						<br></br>
